@@ -7,6 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
     menuToggle.addEventListener('click', () => {
         sidebar.classList.toggle('collapsed');
         content.classList.toggle('expanded');
-        header.classList.toggle('expanded');
+        header.classList.toggle('collapsed');
     });
 });

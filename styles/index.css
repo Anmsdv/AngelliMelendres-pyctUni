@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar {
+    width: 300px; /* Ajustado a 300px */
+    background-color: #ffffff;
+    height: 100%;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    left: 0;
+    z-index: 1000;
+    transform: translateX(-300px); /* Ajustado a 300px */
+    transition: transform 0.3s ease-in-out;
+}
+
+.sidebar.collapsed {
+    transform: translateX(0);
+}
+
+.sidebar-header {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.sidebar-logo {
+    width: 35px;
+    margin-right: 10px;
+}
+
+.sidebar-menu {
+    padding: 20px 0;
+}
+
+.sidebar-section h4 {
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.sidebar-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-section ul li {
+    padding: 10px 20px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-section ul li a {
+    text-decoration: none;
+    color: #333;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-section ul li a i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.sidebar-section ul li:hover {
+    background-color: #ececec;
+    cursor: pointer;
+}
+
+.content {
+    flex-grow: 1;
+    margin-left: 0;
+    padding: 20px;
+    overflow-y: auto;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+.content.expanded {
+    margin-left: 300px; /* Ajustado a 300px */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #224FB1;
+    color: #ffffff;
+    position: fixed;
+    width: calc(100% - 300px); /* Ajustado a 300px */
+    top: 0;
+    z-index: 1001;
+    left: 300px; /* Ajustado a 300px */
+    transition: left 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+header.collapsed {
+    width: 100%; /* Ajusta el ancho cuando el sidebar está colapsado */
+    left: 0; /* Reposiciona el header cuando el sidebar está cerrado */
+}
+
+header h2 {
+    margin: 0;
+    font-size: 1.2em;
+    padding-left: 50px;
+}
+
+.menu-toggle {
+    font-size: 1.5em;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1002;
+    position: relative;
+    margin-left: 10px;
+}
+
+.dropdown-toggle {
+    font-size: 1.5em;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.bienvenida {
+    letter-spacing: 0.25em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+.uZona {
+    letter-spacing: 0.2em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
+
+main {
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 100px;
+}
+
+.gears {
+    margin-top: 20px;
+}
+
+.zona_bienvenida {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
