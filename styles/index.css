@@ -7,14 +7,14 @@ body {
 }
 
 .sidebar {
-    width: 300px; /* Ajustado a 300px */
+    width: 300px;
     background-color: #ffffff;
     height: 100%;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     position: fixed;
     left: 0;
     z-index: 1000;
-    transform: translateX(-300px); /* Ajustado a 300px */
+    transform: translateX(-300px);
     transition: transform 0.3s ease-in-out;
 }
 
@@ -28,6 +28,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+}
+.htop {
+    font-size: 17px;
+    font-weight: normal;
+    letter-spacing: normal;
+}
+
+.hbottom {
+    font-size: 13px;
 }
 
 .sidebar-logo {
@@ -87,44 +96,52 @@ body {
 }
 
 .content.expanded {
-    margin-left: 300px; /* Ajustado a 300px */
+    margin-left: 300px;
+}
+
+.header-name {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: .02em;
+    font-weight: 400;
+    margin-left: 15px;
+    margin-top: 3px;
 }
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start; 
     align-items: center;
     padding: 10px 20px;
+    height: 65px;
     background-color: #224FB1;
     color: #ffffff;
     position: fixed;
-    width: calc(100% - 300px); /* Ajustado a 300px */
+    width: calc(100% - 300px);
     top: 0;
     z-index: 1001;
-    left: 300px; /* Ajustado a 300px */
+    left: 300px; 
     transition: left 0.3s ease-in-out, width 0.3s ease-in-out;
 }
 
 header.collapsed {
-    width: 100%; /* Ajusta el ancho cuando el sidebar está colapsado */
-    left: 0; /* Reposiciona el header cuando el sidebar está cerrado */
-}
-
-header h2 {
-    margin: 0;
-    font-size: 1.2em;
-    padding-left: 50px;
+    width: 100%;
+    left: 0;
 }
 
 .menu-toggle {
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: white;
     background: none;
     border: none;
     cursor: pointer;
     z-index: 1002;
-    position: relative;
-    margin-left: 10px;
+    margin-right: 10px; 
+}
+
+.dropdown {
+    margin-left: auto; 
 }
 
 .dropdown-toggle {
