@@ -122,9 +122,10 @@
                     <!-- Fin Botones Superiores -->
                     <!-- Botones de fecha -->
                     <div class="accordion" id="attendanceAccordion">
+                        <!-- julio -->
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingJuly">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                <button id="a_btn"class="accordion-button" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseJuly" aria-expanded="true"
                                     aria-controls="collapseJuly">
                                     JULIO 2023
@@ -133,7 +134,6 @@
                             <div id="collapseJuly" class="accordion-collapse collapse show"
                                 aria-labelledby="headingJuly" data-bs-parent="#attendanceAccordion">
                                 <div class="accordion-body">
-                                    <!-- Tabla de asistencias de JULIO -->
                                     <table class="table table-striped">
                                         <thead>
                                             <tr>
@@ -162,12 +162,16 @@
                                         </tbody>
                                     </table>
                                 </div>
+                                <div class="resumen_container">
+                                    <p>Resumen de Asistencia del mes</p>
+                                    <span><strong>P:</strong> 14 <strong>T:</strong> 0 <strong>F:</strong>0</span>
+                                </div>
                             </div>
                         </div>
-                    
+                        <!-- JUNIO -->
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingJune">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                <button id="a_btn" class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseJune" aria-expanded="false"
                                     aria-controls="collapseJune">
                                     JUNIO 2023
@@ -205,8 +209,16 @@
                                         </tbody>
                                     </table>
                                 </div>
+                                <div class="resumen_container">
+                                    <p>Resumen de Asistencia del mes</p>
+                                    <span><strong>P:</strong> 14 <strong>T:</strong> 0 <strong>F:</strong>0</span>
+                                </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="resumen_container">
+                        <p>Resumen de Asistencia del semestre</p>
+                        <span><strong>P:</strong> 43 <strong>T:</strong> 0 <strong>F:</strong>0</span>
                     </div>
                 </div>
             </main>
