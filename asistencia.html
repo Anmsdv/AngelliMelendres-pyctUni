@@ -31,7 +31,8 @@
                 <div class="sidebar-section">
                     <h4>General</h4>
                     <ul>
-                        <li><a href="asistencia.html"><i class="bi bi-person"></i>
+                        <li><a href="asistencia.html"><i
+                                    class="bi bi-person"></i>
                                 Practicante</a></li>
                         <li><a href="#"><i class="bi bi-info-circle"></i>
                                 Información</a></li>
@@ -50,7 +51,7 @@
         </div>
 
         <div class="content expanded">
-            <header>
+            <header> <!-- header -->
                 <button class="menu-toggle"><i
                         class="fa-solid fa-bars"></i></button>
                 <h2 class="header-name">MELENDRES SILVESTRE, ANGELLI
@@ -71,9 +72,105 @@
                                 sesión</a></li>
                     </ul>
                 </div>
-            </header>
+            </header><!-- fin header -->
+            <div class="main-content">
+                <!-- Botones superiores -->
+                <div class="btn-container">
+                    <div class="semester-row">
+                        <label for="semester-select">Semestre:</label>
+                        <select id="semester-select" class="form-select semester-select">
+                            <option value="20231">20231</option>
+                            <option value="20232">20232</option>
+                        </select>
+                    </div>
+                    <div class="p_info">
+                        <span>Presione este botón solo cuando tenga que registrar su entrada y su salida de clase.</span>
+                    </div>
+                    <div class="btns_Asistencia">
+                        <div class="btns_ATop">
+                            <div class="btn-row">
+                                <a>Hora:  12:24:46</a>
+                                <button class="btn" id="abtn" style="background-color: #35A65C;">MARCAR MI ASISTENCIA:
+                                    ENTRADA / SALIDA</button>
+                                <a>Ayuda <i class="fa-regular fa-circle-question"></i></a>
+                            </div>
 
-            
+                            <div class="btn-row">
+                                <button class="btn" id="abtn" style="background-color: #FF8100;">TOMAR ASISTENCIA
+                                    ALUMNOS</button>
+                            </div>
+
+                            <div class="btn-row">
+                                <button id="abtn" class="btn" style="background-color: #224FB1;">SOLICITAR RECUPERACIÓN /
+                                    JUSTIFICACIÓN</button>
+                            </div>
+                        </div>
+                        <div class="btns_ABot">
+                            <div class="status-btn-row">
+                                <button id="abtn" class="btn" style="background-color: #224FB1;">P: PUNTUAL</button>
+                                <button id="abtn" class="btn" style="background-color: #224FB1;">T: TARDANZA
+                                    (MIN)</button>
+                                <button id="abtn" class="btn" style="background-color: #224FB1;">F: FALTA</button>
+                                <button id="abtn" class="btn" style="background-color: #224FB1;">N.N: N.N</button>
+                                <button id="abtn" class="btn" style="background-color: #224FB1;">REPORTE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin Botones Superiores -->
+                <!-- Botones de fecha -->
+                <div class="accordion" id="attendanceAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingMay">
+                            <button class="accordion-button" type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseMay"
+                                aria-expanded="true"
+                                aria-controls="collapseMay">
+                                MAYO 2023
+                            </button>
+                        </h2>
+                        <div id="collapseMay"
+                            class="accordion-collapse collapse show"
+                            aria-labelledby="headingMay"
+                            data-bs-parent="#attendanceAccordion">
+                            <div class="accordion-body">
+                                <!-- Tabla de asistencias -->
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Día</th>
+                                            <th scope="col">Curso</th>
+                                            <th scope="col">Horario</th>
+                                            <th scope="col">Marcación</th>
+                                            <th scope="col">Est</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Viernes 12</td>
+                                            <td>MC510-E (TEO)</td>
+                                            <td>11-13</td>
+                                            <td>11:02 - 13:00</td>
+                                            <td><span
+                                                    class="badge bg-success">P</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Viernes 12</td>
+                                            <td>BIC01-F (PRA)</td>
+                                            <td>09-11</td>
+                                            <td>09:00 - 11:24</td>
+                                            <td><span
+                                                    class="badge bg-success">P</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repite el bloque anterior para "Junio 2023", "Julio 2023", etc. -->
+                </div>
+            </div>
         </div>
 
         <script
