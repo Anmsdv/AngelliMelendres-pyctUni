@@ -123,21 +123,17 @@
                     <!-- Botones de fecha -->
                     <div class="accordion" id="attendanceAccordion">
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingMay">
-                                <button class="accordion-button" type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#collapseMay"
-                                    aria-expanded="true"
-                                    aria-controls="collapseMay">
-                                    MAYO 2023
+                            <h2 class="accordion-header" id="headingJuly">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseJuly" aria-expanded="true"
+                                    aria-controls="collapseJuly">
+                                    JULIO 2023
                                 </button>
                             </h2>
-                            <div id="collapseMay"
-                                class="accordion-collapse collapse show"
-                                aria-labelledby="headingMay"
-                                data-bs-parent="#attendanceAccordion">
+                            <div id="collapseJuly" class="accordion-collapse collapse show"
+                                aria-labelledby="headingJuly" data-bs-parent="#attendanceAccordion">
                                 <div class="accordion-body">
-                                    <!-- Tabla de asistencias -->
+                                    <!-- Tabla de asistencias de JULIO -->
                                     <table class="table table-striped">
                                         <thead>
                                             <tr>
@@ -154,23 +150,63 @@
                                                 <td>MC510-E (TEO)</td>
                                                 <td>11-13</td>
                                                 <td>11:02 - 13:00</td>
-                                                <td><span
-                                                        class="badge bg-success">P</span></td>
+                                                <td><span class="badge bg-success">P</span></td>
                                             </tr>
                                             <tr>
                                                 <td>Viernes 12</td>
                                                 <td>BIC01-F (PRA)</td>
                                                 <td>09-11</td>
                                                 <td>09:00 - 11:24</td>
-                                                <td><span
-                                                        class="badge bg-success">P</span></td>
+                                                <td><span class="badge bg-success">P</span></td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
                         </div>
-                        <!-- Repite el bloque anterior para "Junio 2023", "Julio 2023", etc. -->
+                    
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingJune">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseJune" aria-expanded="false"
+                                    aria-controls="collapseJune">
+                                    JUNIO 2023
+                                </button>
+                            </h2>
+                            <div id="collapseJune" class="accordion-collapse collapse" aria-labelledby="headingJune"
+                                data-bs-parent="#attendanceAccordion">
+                                <div class="accordion-body">
+                                    <!-- Tabla de asistencias de JUNIO -->
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Día</th>
+                                                <th scope="col">Curso</th>
+                                                <th scope="col">Horario</th>
+                                                <th scope="col">Marcación</th>
+                                                <th scope="col">Est</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Viernes 12</td>
+                                                <td>MC510-E (TEO)</td>
+                                                <td>11-13</td>
+                                                <td>11:02 - 13:00</td>
+                                                <td><span class="badge bg-success">P</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Viernes 12</td>
+                                                <td>BIC01-F (PRA)</td>
+                                                <td>09-11</td>
+                                                <td>09:00 - 11:24</td>
+                                                <td><span class="badge bg-success">P</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </main>
