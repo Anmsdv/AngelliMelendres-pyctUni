@@ -53,34 +53,3 @@
     font-size: 14px;
     font-weight: bold;
 }
-
-.sidebar-section ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.sidebar-section ul li {
-    padding: 10px 20px;
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-}
-
-.sidebar-section ul li a {
-    text-decoration: none;
-    color: #333;
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.sidebar-section ul li a i {
-    margin-right: 10px;
-    font-size: 18px;
-}
-
-.sidebar-section ul li:hover {
-    background-color: #ececec;
-    cursor: pointer;
-}
