@@ -47,9 +47,52 @@ body {
 }
 
 .schedule-table td {
-    height: 80px;
+    height: 0px;
 }
 
 .btn-danger {
     margin-top: 10px;
+}
+
+.content-container {
+    padding: 60px;
+}
+
+/* Estilos para alinear el select y el texto 'DEFINITIVO' */
+.infsd {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.infsd select {
+    width: auto;
+}
+
+.infsd p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 20px;
+    color: #1a73e8; /* Color del texto 'DEFINITIVO' */
+}
+/* Estilos para alinear el select y el texto 'DEFINITIVO' */
+.infsd {
+    display: flex;
+    align-items:center; /* Mantiene la alineación del select y texto en una línea */
+    justify-content: flex-end; /* Alinea los elementos al final (derecha) */
+    gap: 10px; /* Ajusta la separación entre el select y el texto */
+    margin-top: 20px;
+}
+
+.infsd select {
+    width: auto;
+}
+
+.infsd p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 20px;
+    color: #224FB1; /* Color del texto 'DEFINITIVO' */
 }
