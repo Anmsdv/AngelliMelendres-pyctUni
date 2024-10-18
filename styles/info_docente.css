@@ -1,0 +1,32 @@
+.main-content{
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.content-header {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.docente-img {
+    width: 150px;
+    height: 150px;
+    border: 4px; 
+    padding: 5px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+h4 {
+    margin: 0;
+}
+
+.btns {
+    margin-top: 10px;
+}
+
+.btns button {
+    margin-right: 10px;
+}
