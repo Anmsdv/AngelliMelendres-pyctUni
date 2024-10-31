@@ -52,8 +52,8 @@ h4 {
     color: #224FB1;
     font-weight: 400;
     font-size: 24px;
-    margin-bottom: 20px;
     padding-top: 20px;
+    margin-bottom: 4px;
 }
 
 .sex-select {
@@ -69,4 +69,14 @@ h4 {
     padding: 10px;
     font-size: 16px;
     max-width: 300px;
+}
+.btnRgstro{
+    background-color: #224FB1;
+    color: white;
+    padding: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    border-style: none;
+    border-radius: 2px;
 }

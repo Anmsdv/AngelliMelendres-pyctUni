@@ -1,367 +1,610 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>UNI | EARPFIM</title>
-        <link rel="icon" href="img/favicon-32x32.png" type="image/x-icon">
-        <link rel="stylesheet" href="styles/info_docente.css">
-        <link rel="stylesheet" href="styles/sidebar.css">
-        <link rel="stylesheet" href="styles/header.css">
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-            rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
-            rel="stylesheet">
-        <script src="https://kit.fontawesome.com/3f92b1e2a0.js"
-            crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <div class="sidebar collapsed">
-            <article class="sidebar-header">
-                <img src="img/logoUni.png" alt="UNI EARPIFM Logo"
-                    class="sidebar-logo">
-                <div class="hbar_content" href="index.html">
-                    <span class="htop">UNI EARPIFM</span>
-                    <p class="hbottom">PRACTICANTE</p>
-                </div>
-            </article>
-            <nav class="sidebar-menu">
-                <div class="sidebar-section">
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button" type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#collapseGnl"
-                                    aria-expanded="true"
-                                    aria-controls="collapseGnl">
-                                    <i class="fa-solid fa-suitcase"></i>_General
-                                </button>
-                            </h2>
-                            <div id="collapseGnl"
-                                class="accordion-collapse collapse show"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <a class="btn btn-light w-100 text-start" href="#" role="button"><i class="fa-solid fa-graduation-cap"></i> Aula Virtual FIM</a>
-                                    <a class="btn btn-light w-100 text-start" href="#" role="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 15 15"><path fill="black" fill-rule="evenodd" d="M1.5 0A1.5 1.5 0 0 0 0 1.5v12A1.5 1.5 0 0 0 1.5 15h12a1.5 1.5 0 0 0 1.5-1.5v-12A1.5 1.5 0 0 0 13.5 0zm5 9A3.5 3.5 0 0 0 3 12.5v1a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-1A3.5 3.5 0 0 0 8.5 9zM5 5.5a2.5 2.5 0 1 1 5 0a2.5 2.5 0 0 1-5 0" clip-rule="evenodd"/></svg> Información Docente</a>
-                                    <a class="btn btn-light w-100 text-start" href="#" role="button"><i class="fa-solid fa-pen"></i>  Mi horario de Clases</a>
-                                    <a class="btn btn-light w-100 text-start" href="#" role="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512"><path fill="currentColor" d="M256 26.2L52 135h408zM73 153v14h366v-14zm16 32v206h30V185zm101.334 0v206h30V185zm101.332 0v206h30V185zM393 185v206h30V185zM73 409v30h366v-30zm-32 48v30h430v-30z"/></svg> Mis cursos Asignados</a>
-                                    <a class="btn btn-light w-100 text-start" href="#" role="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="black" d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2M6 4h5v8l-2.5-1.5L6 12z"/></svg> Tutoria Alumnos</a>
-                                    <a class="btn btn-light w-100 text-start" href="#" role="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="black" d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2M6 4h5v8l-2.5-1.5L6 12z"/></svg> Asistencias</a>
-                                    <a class="btn btn-light w-100 text-start" href="#" role="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="black" d="M10 10.5h1q.425 0 .713-.288T12 9.5v-1q0-.425-.288-.712T11 7.5H9.5q-.2 0-.35.15T9 8v4q0 .2.15.35t.35.15t.35-.15T10 12zm0-1v-1h1v1zm5 3q.425 0 .713-.288T16 11.5v-3q0-.425-.288-.712T15 7.5h-1.5q-.2 0-.35.15T13 8v4q0 .2.15.35t.35.15zm-1-1v-3h1v3zm4-1h.5q.2 0 .35-.15T19 10t-.15-.35t-.35-.15H18v-1h.5q.2 0 .35-.15T19 8t-.15-.35t-.35-.15h-1q-.2 0-.35.15T17 8v4q0 .2.15.35t.35.15t.35-.15T18 12zM8 18q-.825 0-1.412-.587T6 16V4q0-.825.588-1.412T8 2h12q.825 0 1.413.588T22 4v12q0 .825-.587 1.413T20 18zm-4 4q-.825 0-1.412-.587T2 20V7q0-.425.288-.712T3 6t.713.288T4 7v13h13q.425 0 .713.288T18 21t-.288.713T17 22z"/></svg> Mis Syllabus</a>
-                                    <a class="btn btn-light w-100 text-start" href="#" role="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 28 28"><path fill="black" d="M11 8a1 1 0 0 1 .117 1.993L11 10H8a4 4 0 0 0-.2 7.995L8 18h3a1 1 0 0 1 .117 1.993L11 20H8a6 6 0 0 1-.225-11.996L8 8zm9 0a6 6 0 0 1 .225 11.996L20 20h-3a1 1 0 0 1-.117-1.993L17 18h3a4 4 0 0 0 .2-7.995L20 10h-3a1 1 0 0 1-.117-1.993L17 8zM8 13h12a1 1 0 0 1 .117 1.993L20 15H8a1 1 0 0 1-.117-1.993zh12z"/></svg> Cargar Notas DIRCE</a>
-                                    <a class="btn btn-light w-100 text-start" href="#" role="button"><svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 256 256"><path fill="black" d="m213.66 66.34l-40-40A8 8 0 0 0 168 24H88a16 16 0 0 0-16 16v16H56a16 16 0 0 0-16 16v144a16 16 0 0 0 16 16h112a16 16 0 0 0 16-16v-16h16a16 16 0 0 0 16-16V72a8 8 0 0 0-2.34-5.66M168 216H56V72h76.69L168 107.31zm32-32h-16v-80a8 8 0 0 0-2.34-5.66l-40-40A8 8 0 0 0 136 56H88V40h76.69L200 75.31Zm-56-32a8 8 0 0 1-8 8H88a8 8 0 0 1 0-16h48a8 8 0 0 1 8 8m0 32a8 8 0 0 1-8 8H88a8 8 0 0 1 0-16h48a8 8 0 0 1 8 8"/></svg> Biblioteca Virtual</a>
-                                    <a class="btn btn-light w-100 text-start" href="#" role="button"><svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="black" d="M13 13h8v6q0 .825-.587 1.413T19 21h-6zm0-2V3h6q.825 0 1.413.588T21 5v6zm-2 0H3V5q0-.825.588-1.412T5 3h6zm0 2v8H5q-.825 0-1.412-.587T3 19v-6z"/></svg> Mi disponibilidad</a>
-                                    <a class="btn btn-light w-100 text-start" href="#" role="button"><svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="black" d="m17 21l-2.75-3l1.16-1.16L17 18.43l3.59-3.59l1.16 1.41M12.8 21H5a2 2 0 0 1-2-2V5c0-1.11.89-2 2-2h14a2 2 0 0 1 2 2v7.8c-.88-.51-1.91-.8-3-.8l-1 .08V11H7v2h7.69A5.98 5.98 0 0 0 12 18c0 1.09.29 2.12.8 3m-.8-6H7v2h5m5-10H7v2h10"/></svg> Reclamo del reclamo</a>
-                                    <a class="btn btn-light w-100 text-start" href="#" role="button"><i class="fa-solid fa-gear"></i> Ayuda en Aula</a>
-                                    <a class="btn btn-light w-100 text-start" href="#" role="button"><i class="fa-solid fa-graduation-cap"></i> Aula Virtual Titulación</a>
-                                </div>
-                                
+
+<head>
+    <title>UNI | EARPFIM</title>
+    <link rel="icon" href="img/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/info_docente.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3f92b1e2a0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="sidebar collapsed">
+        <article class="sidebar-header">
+            <img src="img/logoUni.png" alt="UNI EARPIFM Logo" class="sidebar-logo">
+            <div class="hbar_content" href="index.html">
+                <span class="htop">UNI EARPIFM</span>
+                <p class="hbottom">PRACTICANTE</p>
+            </div>
+        </article>
+        <nav class="sidebar-menu">
+            <div class="sidebar-section">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseGnl" aria-expanded="true" aria-controls="collapseGnl">
+                                <i class="fa-solid fa-suitcase"></i>_General
+                            </button>
+                        </h2>
+                        <div id="collapseGnl" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <a class="btn btn-light w-100 text-start" href="#" role="button"><i
+                                        class="fa-solid fa-graduation-cap"></i>
+                                    Aula Virtual FIM</a>
+                                <a class="btn btn-light w-100 text-start" href="#" role="button"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 15 15">
+                                        <path fill="black" fill-rule="evenodd"
+                                            d="M1.5 0A1.5 1.5 0 0 0 0 1.5v12A1.5 1.5 0 0 0 1.5 15h12a1.5 1.5 0 0 0 1.5-1.5v-12A1.5 1.5 0 0 0 13.5 0zm5 9A3.5 3.5 0 0 0 3 12.5v1a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-1A3.5 3.5 0 0 0 8.5 9zM5 5.5a2.5 2.5 0 1 1 5 0a2.5 2.5 0 0 1-5 0"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    Información Docente</a>
+                                <a class="btn btn-light w-100 text-start" href="#" role="button"><i
+                                        class="fa-solid fa-pen"></i> Mi
+                                    horario de Clases</a>
+                                <a class="btn btn-light w-100 text-start" href="#" role="button"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                        viewBox="0 0 512 512">
+                                        <path fill="currentColor"
+                                            d="M256 26.2L52 135h408zM73 153v14h366v-14zm16 32v206h30V185zm101.334 0v206h30V185zm101.332 0v206h30V185zM393 185v206h30V185zM73 409v30h366v-30zm-32 48v30h430v-30z" />
+                                    </svg>
+                                    Mis cursos Asignados</a>
+                                <a class="btn btn-light w-100 text-start" href="#" role="button"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                        <path fill="black"
+                                            d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2M6 4h5v8l-2.5-1.5L6 12z" />
+                                    </svg>
+                                    Tutoria Alumnos</a>
+                                <a class="btn btn-light w-100 text-start" href="#" role="button"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                        <path fill="black"
+                                            d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2M6 4h5v8l-2.5-1.5L6 12z" />
+                                    </svg>
+                                    Asistencias</a>
+                                <a class="btn btn-light w-100 text-start" href="#" role="button"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                        <path fill="black"
+                                            d="M10 10.5h1q.425 0 .713-.288T12 9.5v-1q0-.425-.288-.712T11 7.5H9.5q-.2 0-.35.15T9 8v4q0 .2.15.35t.35.15t.35-.15T10 12zm0-1v-1h1v1zm5 3q.425 0 .713-.288T16 11.5v-3q0-.425-.288-.712T15 7.5h-1.5q-.2 0-.35.15T13 8v4q0 .2.15.35t.35.15zm-1-1v-3h1v3zm4-1h.5q.2 0 .35-.15T19 10t-.15-.35t-.35-.15H18v-1h.5q.2 0 .35-.15T19 8t-.15-.35t-.35-.15h-1q-.2 0-.35.15T17 8v4q0 .2.15.35t.35.15t.35-.15T18 12zM8 18q-.825 0-1.412-.587T6 16V4q0-.825.588-1.412T8 2h12q.825 0 1.413.588T22 4v12q0 .825-.587 1.413T20 18zm-4 4q-.825 0-1.412-.587T2 20V7q0-.425.288-.712T3 6t.713.288T4 7v13h13q.425 0 .713.288T18 21t-.288.713T17 22z" />
+                                    </svg>
+                                    Mis Syllabus</a>
+                                <a class="btn btn-light w-100 text-start" href="#" role="button"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 28 28">
+                                        <path fill="black"
+                                            d="M11 8a1 1 0 0 1 .117 1.993L11 10H8a4 4 0 0 0-.2 7.995L8 18h3a1 1 0 0 1 .117 1.993L11 20H8a6 6 0 0 1-.225-11.996L8 8zm9 0a6 6 0 0 1 .225 11.996L20 20h-3a1 1 0 0 1-.117-1.993L17 18h3a4 4 0 0 0 .2-7.995L20 10h-3a1 1 0 0 1-.117-1.993L17 8zM8 13h12a1 1 0 0 1 .117 1.993L20 15H8a1 1 0 0 1-.117-1.993zh12z" />
+                                    </svg>
+                                    Cargar Notas DIRCE</a>
+                                <a class="btn btn-light w-100 text-start" href="#" role="button"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em"
+                                        viewBox="0 0 256 256">
+                                        <path fill="black"
+                                            d="m213.66 66.34l-40-40A8 8 0 0 0 168 24H88a16 16 0 0 0-16 16v16H56a16 16 0 0 0-16 16v144a16 16 0 0 0 16 16h112a16 16 0 0 0 16-16v-16h16a16 16 0 0 0 16-16V72a8 8 0 0 0-2.34-5.66M168 216H56V72h76.69L168 107.31zm32-32h-16v-80a8 8 0 0 0-2.34-5.66l-40-40A8 8 0 0 0 136 56H88V40h76.69L200 75.31Zm-56-32a8 8 0 0 1-8 8H88a8 8 0 0 1 0-16h48a8 8 0 0 1 8 8m0 32a8 8 0 0 1-8 8H88a8 8 0 0 1 0-16h48a8 8 0 0 1 8 8" />
+                                    </svg>
+                                    Biblioteca Virtual</a>
+                                <a class="btn btn-light w-100 text-start" href="#" role="button"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em"
+                                        viewBox="0 0 24 24">
+                                        <path fill="black"
+                                            d="M13 13h8v6q0 .825-.587 1.413T19 21h-6zm0-2V3h6q.825 0 1.413.588T21 5v6zm-2 0H3V5q0-.825.588-1.412T5 3h6zm0 2v8H5q-.825 0-1.412-.587T3 19v-6z" />
+                                    </svg>
+                                    Mi disponibilidad</a>
+                                <a class="btn btn-light w-100 text-start" href="#" role="button"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em"
+                                        viewBox="0 0 24 24">
+                                        <path fill="black"
+                                            d="m17 21l-2.75-3l1.16-1.16L17 18.43l3.59-3.59l1.16 1.41M12.8 21H5a2 2 0 0 1-2-2V5c0-1.11.89-2 2-2h14a2 2 0 0 1 2 2v7.8c-.88-.51-1.91-.8-3-.8l-1 .08V11H7v2h7.69A5.98 5.98 0 0 0 12 18c0 1.09.29 2.12.8 3m-.8-6H7v2h5m5-10H7v2h10" />
+                                    </svg>
+                                    Reclamo del reclamo</a>
+                                <a class="btn btn-light w-100 text-start" href="#" role="button"><i
+                                        class="fa-solid fa-gear"></i> Ayuda
+                                    en Aula</a>
+                                <a class="btn btn-light w-100 text-start" href="#" role="button"><i
+                                        class="fa-solid fa-graduation-cap"></i>
+                                    Aula Virtual Titulación</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseAdm" aria-expanded="false" aria-controls="collapseAdm">
+                                <i class="fa-solid fa-suitcase"></i>
+                                _Administrador
+                            </button>
+                        </h2>
+                        <div id="collapseAdm" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                btns
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed"
-                                    type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseAdm"
-                                    aria-expanded="false"
-                                    aria-controls="collapseAdm">
-                                    <i class="fa-solid fa-suitcase"></i> _Administrador
-                                </button>
-                            </h2>
-                            <div id="collapseAdm"
-                                class="accordion-collapse collapse"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    btns
-                                </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseAfim" aria-expanded="false" aria-controls="collapseAfim">
+                                <i class="fa-solid fa-suitcase"></i>
+                                _Acreditación FIM
+                            </button>
+                        </h2>
+                        <div id="collapseAfim" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                btns
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed"
-                                    type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseAfim"
-                                    aria-expanded="false"
-                                    aria-controls="collapseAfim">
-                                    <i class="fa-solid fa-suitcase"></i> _Acreditación FIM
-                                </button>
-                            </h2>
-                            <div id="collapseAfim"
-                                class="accordion-collapse collapse"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    btns
-                                </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseVrt" aria-expanded="false" aria-controls="collapseVrt">
+                                <i class="fa-solid fa-suitcase"></i>
+                                _Virtual
+                            </button>
+                        </h2>
+                        <div id="collapseVrt" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                btns
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed"
-                                    type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseVrt"
-                                    aria-expanded="false"
-                                    aria-controls="collapseVrt">
-                                    <i class="fa-solid fa-suitcase"></i> _Virtual
-                                </button>
-                            </h2>
-                            <div id="collapseVrt"
-                                class="accordion-collapse collapse"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    btns
-                                </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseDA" aria-expanded="false" aria-controls="collapseDA">
+                                <i class="fa-solid fa-suitcase"></i>
+                                _Documentos Académicos
+                            </button>
+                        </h2>
+                        <div id="collapseDA" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                btns
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed"
-                                    type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseDA"
-                                    aria-expanded="false"
-                                    aria-controls="collapseDA">
-                                    <i class="fa-solid fa-suitcase"></i> _Documentos Académicos
-                                </button>
-                            </h2>
-                            <div id="collapseDA"
-                                class="accordion-collapse collapse"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    btns
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed"
-                                    type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseSpv"
-                                    aria-expanded="false"
-                                    aria-controls="collapseSpv">
-                                    <i class="fa-solid fa-suitcase"></i> _Supervisión
-                                </button>
-                            </h2>
-                            <div id="collapseSpv"
-                                class="accordion-collapse collapse"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    btns
-                                </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSpv" aria-expanded="false" aria-controls="collapseSpv">
+                                <i class="fa-solid fa-suitcase"></i>
+                                _Supervisión
+                            </button>
+                        </h2>
+                        <div id="collapseSpv" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                btns
                             </div>
                         </div>
                     </div>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
+    </div>
 
-        <div class="content expanded">
-            <header>
-                <button class="menu-toggle"><i
-                        class="fa-solid fa-bars"></i></button>
-                <h2 class="header-name">MELENDRES SILVESTRE, ANGELLI
-                    GUADALUPE</h2>
-                <div class="dropdown">
-                    <button class="dropdown-toggle" type="button"
-                        id="dropdownMenuButton" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        <i class="fa-solid fa-ellipsis-vertical"></i>
-                    </button>
-                    <ul class="dropdown-menu"
-                        aria-labelledby="dropdownMenuButton">
-                        <li><a class="dropdown-item" href="#">Mi
-                                información</a></li>
-                        <li><a class="dropdown-item" href="#">Reiniciar
-                                clave</a></li>
-                        <li><a class="dropdown-item" href="#">Cerrar
-                                sesión</a></li>
+    <div class="content expanded">
+        <header>
+            <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+            <h2 class="header-name">MELENDRES SILVESTRE, ANGELLI
+                GUADALUPE</h2>
+            <div class="dropdown">
+                <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="#">Mi
+                            información</a></li>
+                    <li><a class="dropdown-item" href="#">Reiniciar
+                            clave</a></li>
+                    <li><a class="dropdown-item" href="#">Cerrar
+                            sesión</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <div class="main-content">
+                <div class="content-header d-flex align-items-center justify-content-between">
+                    <div class="docente-info d-flex align-items-center">
+                        <img src="img/usser.png" alt="ussr" class="docente-img">
+                        <div class="ms-3">
+                            <h4>PROFESOR DE, EJEMPLO</h4>
+                            <p>08161078</p>
+                            <div class="btns d-flex">
+                                <a>Actualizar</a>
+                                <button class="btn btn-outline-secondary me-2"><i
+                                        class="fa-solid fa-cloud-arrow-up"></i></button>
+                                <a>Historial</a>
+                                <button class="btn btn-outline-secondary me-2"><i class="fa-solid fa-file"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <button type="button" class="btn btn-success me-2"><i
+                                class="fa-solid fa-rotate-right"></i></button>
+                        <button type="button" class="btn btn-danger">Generar
+                            PDF</button>
+                    </div>
+                </div>
+                <div style="margin-bottom: -17px;">
+                    <ul class="nav nav-tabs mt-4" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="first-tab" data-bs-toggle="tab" data-bs-target="#first"
+                                type="button" role="tab" aria-controls="first" aria-selected="true">1er</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="second-tab" data-bs-toggle="tab" data-bs-target="#second"
+                                type="button" role="tab" aria-controls="second" aria-selected="false">2do</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="third-tab" data-bs-toggle="tab" data-bs-target="#third"
+                                type="button" role="tab" aria-controls="third" aria-selected="false">3ro</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="fourth-tab" data-bs-toggle="tab" data-bs-target="#fourth"
+                                type="button" role="tab" aria-controls="fourth" aria-selected="false">4to</button>
+                        </li>
                     </ul>
                 </div>
-            </header>
 
-            <main>
-                <div class="main-content">
-                    <div class="content-header d-flex align-items-center justify-content-between">
-                        <div class="docente-info d-flex align-items-center">
-                            <img src="img/usser.png" alt="ussr" class="docente-img">
-                            <div class="ms-3">
-                                <h4>PROFESOR DE, EJEMPLO</h4>
-                                <p>08161078</p>
-                                <div class="btns d-flex">
-                                    <a>Actualizar</a>
-                                    <button class="btn btn-outline-secondary me-2"><i class="fa-solid fa-cloud-arrow-up"></i></button>
-                                    <a>Historial</a>
-                                    <button class="btn btn-outline-secondary me-2"><i class="fa-solid fa-file"></i></button>
+                <div class="tab-content mt-3" id="myTabContent">
+                    <div class="tab-pane fade show active" id="first" role="tabpanel" aria-labelledby="first-tab">
+                        <!-- Primer tab -->
+                        <p class="titletbs">1.- DATOS PERSONALES</p>
+                        <form>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="sex-select" class="form-label">Sexo:</label>
+                                    <select id="sex-select" class="form-select sex-select">
+                                        <option value="masculino">Masculino</option>
+                                        <option value="femenino">Femenino</option>
+                                        <option value="otro">Otro</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="nc-select" class="form-label">Fecha
+                                        Nacimiento:</label>
+                                    <input type="date" id="nc-select" class="form-control nc-select" value="1975-02-16">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="dni" class="form-label">DNI:</label>
+                                    <div class="input-group">
+                                        <input type="text" id="dni" class="form-control" value="08161078" readonly>
+                                        <button class="btn btn-outline-secondary" type="button"><i
+                                                class="fa-solid fa-eye"></i></button>
+                                        <button class="btn btn-outline-secondary" type="button"><i
+                                                class="fa-solid fa-download"></i></button>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="telefono" class="form-label">Teléfono
+                                        Fijo:</label>
+                                    <input type="tel" id="telefono" class="form-control"
+                                        value="5316292 | 5456454 | 5310303 |">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="celular" class="form-label">Celular:</label>
+                                    <input type="tel" id="celular" class="form-control" value="951629294 | 999662562 |">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="ruc" class="form-label">RUC:</label>
+                                    <input type="text" id="ruc" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="lib-militar" class="form-label">Lib
+                                        Militar:</label>
+                                    <input type="text" id="lib-militar" class="form-control">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="vehiculo" class="form-label">Si cuenta con
+                                        vehículo, indicar modelo, placa,
+                                        año, color:</label>
+                                    <textarea id="vehiculo" class="form-control" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-4">
+                                    <label for="estado-civil" class="form-label">Estado
+                                        Civil:</label>
+                                    <select id="estado-civil" class="form-select">
+                                        <option value>Seleccionar</option>
+                                        <option value="soltero">Soltero</option>
+                                        <option value="casado">Casado</option>
+                                        <option value="divorciado">Divorciado</option>
+                                        <option value="viudo">Viudo</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="fecha-matrimonio" class="form-label">Fecha
+                                        Matrimonio:</label>
+                                    <input type="date" id="fecha-matrimonio" class="form-control" value="2005-04-01">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="grupo-sanguineo" class="form-label">Grupo
+                                        Sanguíneo:</label>
+                                    <select id="grupo-sanguineo" class="form-select">
+                                        <option value>Seleccionar</option>
+                                        <option value="A+">A+</option>
+                                        <option value="A-">A-</option>
+                                        <option value="B+">B+</option>
+                                        <option value="B-">B-</option>
+                                        <option value="AB+">AB+</option>
+                                        <option value="AB-">AB-</option>
+                                        <option value="O+">O+</option>
+                                        <option value="O-">O-</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-12">
+                                    <label for="email-Prof" class="form-label">E-mail(s):</label>
+                                    <input type="email" id="email-Prof" class="form-control"
+                                        value="maximo@uni.ed maxobregon@gmai">
+                                </div>
+                            </div>
+                            <p class="sbttbs">Lugar de Nacimiento</p>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="cntry-select" class="form-label">País:</label>
+                                    <select id="cntry-select" class="form-select cntry-select">
+                                        <option value="peru" selected>Perú</option>
+                                        <option value="chile">Chile</option>
+                                        <option value="argentina">Argentina</option>
+                                        <option value="otro">Otro</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="dep-select" class="form-label">Departamento:</label>
+                                    <select id="dep-select" class="form-select dep-select">
+                                        <option value="lima" selected>15
+                                            Lima</option>
+                                        <option value="otro">Otro</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="prov-select" class="form-label">Provincia:</label>
+                                    <select id="prov-select" class="form-select prov-select">
+                                        <option value="lima" selected>01
+                                            Lima</option>
+                                        <option value="otro">Otro</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="dist-select" class="form-label">Distrito:</label>
+                                    <select id="dist-select" class="form-select dist-select">
+                                        <option value="san-martin-de-porres" selected>35 San Martin de
+                                            Porres</option>
+                                        <option value="otro">Otro</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <p class="sbttbs">Domicilio</p>
+                            <button type="button" class="btnRgstro" id="addAddressBtn">AÑADIR REGISTRO</button>
+
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Orden</th>
+                                        <th>País</th>
+                                        <th>Dirección extranjera</th>
+                                        <th>Departamento</th>
+                                        <th>Provincia</th>
+                                        <th>Distrito</th>
+                                        <th>Tipo de Vía</th>
+                                        <th>Nombre de la Vía</th>
+                                        <th>Tipo</th>
+                                        <th>Número de Inmueble</th>
+                                        <th>Tipo de Zona</th>
+                                        <th>Nombre de la Zona</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="addressTableBody">
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Perú</td>
+                                        <td></td>
+                                        <td>15 Lima</td>
+                                        <td>01 Lima</td>
+                                        <td>35 San Martín de Porres</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>Mz</td>
+                                        <td>F</td>
+                                        <td>Urbana</td>
+                                        <td>-</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                        <div class="modal fade" id="addAddressModal" tabindex="-1"
+                            aria-labelledby="addAddressModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="addAddressModalLabel">Agregar domicilio</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form id="addAddressForm">
+                                            <div class="row mb-3">
+                                                <div class="col-md-6">
+                                                    <label for="pais" class="form-label">País</label>
+                                                    <select id="pais" class="form-select" required>
+                                                        <option value="Perú">Perú</option>
+                                                        <option value="Chile">Chile</option>
+                                                        <option value="Argentina">Argentina</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-6" hidden>
+                                                    <label for="extranjero" class="form-label">País</label>
+                                                    <select id="extranjero" class="form-select" required>
+                                                        <option value="-">-</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="departamento" class="form-label">Departamento</label>
+                                                    <select id="departamento" class="form-select" required>
+                                                        <option value="">Seleccionar</option>
+                                                        <option value="02 Ancash">02 Ancash</option>
+                                                        <option value="15 Lima">15 Lima</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col-md-6">
+                                                    <label for="provincia" class="form-label">Provincia</label>
+                                                    <select id="provincia" class="form-select" required>
+                                                        <option value="">Seleccionar</option>
+                                                        <option value="02 Aija">02 Aija</option>
+                                                        <option value="01 Lima">01 Lima</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="distrito" class="form-label">Distrito</label>
+                                                    <select id="distrito" class="form-select" required>
+                                                        <option value="">Seleccionar</option>
+                                                        <option value="02 Coris">02 Coris</option>
+                                                        <option value="35 San Martín de Porres">35 San Martín de Porres
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col-md-6">
+                                                    <label for="tipoVia" class="form-label">Tipo de Vía</label>
+                                                    <select id="tipoVia" class="form-select" required>
+                                                        <option value="">Seleccionar</option>
+                                                        <option value="Avenida">Avenida</option>
+                                                        <option value="Calle">Calle</option>
+                                                        <option value="Jirón">Jirón</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="nombreVia" class="form-label">Nombre de la Vía</label>
+                                                    <input type="text" id="nombreVia" class="form-control" required>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col-md-6">
+                                                    <label for="tipo" class="form-label">Tipo</label>
+                                                    <select id="tipo" class="form-select" required>
+                                                        <option value="">Seleccionar</option>
+                                                        <option value="Mz">Mz</option>
+                                                        <option value="Lt">Lt</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="numeroInmueble" class="form-label">Número de
+                                                        Inmueble</label>
+                                                    <input type="text" id="numeroInmueble" class="form-control"
+                                                        required>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col-md-6">
+                                                    <label for="tipoZona" class="form-label">Tipo de Zona</label>
+                                                    <select id="tipoZona" class="form-select" required>
+                                                        <option value="">Seleccionar</option>
+                                                        <option value="Mz">Urbana</option>
+                                                        <option value="Lt">Rural</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="nombreZona" class="form-label">Nombre de la Zona</label>
+                                                    <input type="text" id="nombreZona" class="form-control"
+                                                        required>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">CANCELAR</button>
+                                        <button type="button" class="btn btn-primary"
+                                            id="saveAddressBtn">GUARDAR</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="d-flex">
-                            <button type="button" class="btn btn-success me-2"><i class="fa-solid fa-rotate-right"></i></button>
-                            <button type="button" class="btn btn-danger">Generar PDF</button>
-                        </div>
                     </div>
-                    <div style="margin-bottom: -17px;">
-                        <ul class="nav nav-tabs mt-4" id="myTab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="first-tab" data-bs-toggle="tab" data-bs-target="#first" type="button" role="tab" aria-controls="first" aria-selected="true">1er</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="second-tab" data-bs-toggle="tab" data-bs-target="#second" type="button" role="tab" aria-controls="second" aria-selected="false">2do</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="third-tab" data-bs-toggle="tab" data-bs-target="#third" type="button" role="tab" aria-controls="third" aria-selected="false">3ro</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="fourth-tab" data-bs-toggle="tab" data-bs-target="#fourth" type="button" role="tab" aria-controls="fourth" aria-selected="false">4to</button>
-                            </li>
-                        </ul>
+                    <div class="tab-pane fade" id="second" role="tabpanel" aria-labelledby="second-tab">
+                        <!-- Contenido del segundo tab -->
+                        <h5>Contenido del 2do tab</h5>
                     </div>
-
-                    <div class="tab-content mt-3" id="myTabContent">
-                        <div class="tab-pane fade show active" id="first" role="tabpanel" aria-labelledby="first-tab">
-                            <!-- Primer tab -->
-                            <p class="titletbs">1.- DATOS PERSONALES</p>
-                            <form>
-                                <div class="row mb-3">
-                                    <div class="col-md-6">
-                                        <label for="sex-select" class="form-label">Sexo:</label>
-                                        <select id="sex-select" class="form-select sex-select">
-                                            <option value="masculino">Masculino</option>
-                                            <option value="femenino">Femenino</option>
-                                            <option value="otro">Otro</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label for="nc-select" class="form-label">Fecha Nacimiento:</label>
-                                        <input type="date" id="nc-select" class="form-control nc-select" value="1975-02-16">
-                                    </div>
-                                </div>
-                                <div class="row mb-3">
-                                    <div class="col-md-6">
-                                        <label for="dni" class="form-label">DNI:</label>
-                                        <div class="input-group">
-                                            <input type="text" id="dni" class="form-control" value="08161078" readonly>
-                                            <button class="btn btn-outline-secondary" type="button"><i class="fa-solid fa-eye"></i></button>
-                                            <button class="btn btn-outline-secondary" type="button"><i class="fa-solid fa-download"></i></button>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label for="telefono" class="form-label">Teléfono Fijo:</label>
-                                        <input type="tel" id="telefono" class="form-control" value="5316292 | 5456454 | 5310303 |">
-                                    </div>
-                                </div>
-                                <div class="row mb-3">
-                                    <div class="col-md-6">
-                                        <label for="celular" class="form-label">Celular:</label>
-                                        <input type="tel" id="celular" class="form-control" value="951629294 | 999662562 |">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label for="ruc" class="form-label">RUC:</label>
-                                        <input type="text" id="ruc" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="row mb-3">
-                                    <div class="col-md-6">
-                                        <label for="lib-militar" class="form-label">Lib Militar:</label>
-                                        <input type="text" id="lib-militar" class="form-control">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label for="vehiculo" class="form-label">Si cuenta con vehículo, indicar modelo, placa, año, color:</label>
-                                        <textarea id="vehiculo" class="form-control" rows="3"></textarea>
-                                    </div>
-                                </div>
-                                <div class="row mb-3">
-                                    <div class="col-md-4">
-                                        <label for="estado-civil" class="form-label">Estado Civil:</label>
-                                        <select id="estado-civil" class="form-select">
-                                            <option value="">Seleccionar</option>
-                                            <option value="soltero">Soltero</option>
-                                            <option value="casado">Casado</option>
-                                            <option value="divorciado">Divorciado</option>
-                                            <option value="viudo">Viudo</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <label for="fecha-matrimonio" class="form-label">Fecha Matrimonio:</label>
-                                        <input type="date" id="fecha-matrimonio" class="form-control" value="2005-04-01">
-                                    </div>
-                                    <div class="col-md-4">
-                                        <label for="grupo-sanguineo" class="form-label">Grupo Sanguíneo:</label>
-                                        <select id="grupo-sanguineo" class="form-select">
-                                            <option value="">Seleccionar</option>
-                                            <option value="A+">A+</option>
-                                            <option value="A-">A-</option>
-                                            <option value="B+">B+</option>
-                                            <option value="B-">B-</option>
-                                            <option value="AB+">AB+</option>
-                                            <option value="AB-">AB-</option>
-                                            <option value="O+">O+</option>
-                                            <option value="O-">O-</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="row mb-3">
-                                    <div class="col-md-12">
-                                        <label for="email-Prof" class="form-label">E-mail(s):</label>
-                                        <input type="email" id="email-Prof" class="form-control" value="maximo@uni.ed maxobregon@gmai">
-                                    </div>
-                                </div>
-                                <p class="sbttbs">Lugar de Nacimiento</p>
-                                <div class="row mb-3">
-                                    <div class="col-md-6">
-                                        <label for="cntry-select" class="form-label">País:</label>
-                                        <select id="cntry-select" class="form-select cntry-select">
-                                            <option value="peru" selected>Perú</option>
-                                            <option value="chile">Chile</option>
-                                            <option value="argentina">Argentina</option>
-                                            <option value="otro">Otro</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label for="dep-select" class="form-label">Departamento:</label>
-                                        <select id="dep-select" class="form-select dep-select">
-                                            <option value="lima" selected>15 Lima</option>
-                                            <option value="otro">Otro</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="row mb-3">
-                                    <div class="col-md-6">
-                                        <label for="prov-select" class="form-label">Provincia:</label>
-                                        <select id="prov-select" class="form-select prov-select">
-                                            <option value="lima" selected>01 Lima</option>
-                                            <option value="otro">Otro</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label for="dist-select" class="form-label">Distrito:</label>
-                                        <select id="dist-select" class="form-select dist-select">
-                                            <option value="san-martin-de-porres" selected>35 San Martin de Porres</option>
-                                            <option value="otro">Otro</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="tab-pane fade" id="second" role="tabpanel" aria-labelledby="second-tab">
-                            <!-- Contenido del segundo tab -->
-                            <h5>Contenido del 2do tab</h5>
-                        </div>
-                        <div class="tab-pane fade" id="third" role="tabpanel" aria-labelledby="third-tab">
-                            <!-- Contenido del tercer tab -->
-                            <h5>Contenido del 3ro tab</h5>
-                        </div>
-                        <div class="tab-pane fade" id="fourth" role="tabpanel" aria-labelledby="fourth-tab">
-                            <!-- Contenido del cuarto tab -->
-                            <h5>Contenido del 4to tab</h5>
-                        </div>
+                    <div class="tab-pane fade" id="third" role="tabpanel" aria-labelledby="third-tab">
+                        <!-- Contenido del tercer tab -->
+                        <h5>Contenido del 3ro tab</h5>
+                    </div>
+                    <div class="tab-pane fade" id="fourth" role="tabpanel" aria-labelledby="fourth-tab">
+                        <!-- Contenido del cuarto tab -->
+                        <h5>Contenido del 4to tab</h5>
                     </div>
                 </div>
-            </main>
-        </div>
+            </div>
+        </main>
+    </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="javaScript/sidebar_script.js"></script>
-    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="javaScript/sidebar_script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const addAddressBtn = document.getElementById('addAddressBtn');
+            const addAddressModal = new bootstrap.Modal(document.getElementById('addAddressModal'));
+            const saveAddressBtn = document.getElementById('saveAddressBtn');
+            const addressTableBody = document.getElementById('addressTableBody');
+            const addAddressForm = document.getElementById('addAddressForm');
+
+            let addressOrder = 2; // Start from 2 since we already have one address
+
+            addAddressBtn.addEventListener('click', function () {
+                addAddressModal.show();
+            });
+
+            saveAddressBtn.addEventListener('click', function () {
+                if (addAddressForm.checkValidity()) {
+                    const newAddress = {
+                        orden: addressOrder++,
+                        pais: document.getElementById('pais').value,
+                        extranjero: document.getElementById('extranjero').value,
+                        departamento: document.getElementById('departamento').value,
+                        provincia: document.getElementById('provincia').value,
+                        distrito: document.getElementById('distrito').value,
+                        tipoVia: document.getElementById('tipoVia').value,
+                        nombreVia: document.getElementById('nombreVia').value,
+                        tipo: document.getElementById('tipo').value,
+                        numeroInmueble: document.getElementById('numeroInmueble').value,
+                        tipoZona: document.getElementById('tipoZona').value,
+                        nombreZona: document.getElementById('nombreZona').value
+                    };
+
+                    const newRow = addressTableBody.insertRow();
+                    Object.values(newAddress).forEach(value => {
+                        const cell = newRow.insertCell();
+                        cell.textContent = value;
+                    });
+
+                    addAddressModal.hide();
+                    addAddressForm.reset();
+                } else {
+                    addAddressForm.reportValidity();
+                }
+            });
+        });
+    </script>
+</body>
+
 </html>
