@@ -262,8 +262,9 @@
                 <div class="tab-content mt-3" id="myTabContent">
                     <div class="tab-pane fade show active" id="first" role="tabpanel" aria-labelledby="first-tab">
                         <!-- Primer tab -->
+                         <!--DATOS PERSONALES-->
                         <p class="titletbs">1.- DATOS PERSONALES</p>
-                        <form>
+                        <form class="formdts">
                             <div class="row mb-3">
                                 <div class="col-md-6">
                                     <label for="sex-select" class="form-label">Sexo:</label>
@@ -360,7 +361,7 @@
                                         value="maximo@uni.ed maxobregon@gmai">
                                 </div>
                             </div>
-                            <p class="sbttbs">Lugar de Nacimiento</p>
+                            <p class="sbtdp">Lugar de Nacimiento</p>
                             <div class="row mb-3">
                                 <div class="col-md-6">
                                     <label for="cntry-select" class="form-label">País:</label>
@@ -398,7 +399,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <p class="sbttbs">Domicilio</p>
+                            <p class="sbtdp">Domicilio</p>
                             <button type="button" class="btnRgstro" id="addAddressBtn">AÑADIR REGISTRO</button>
 
                             <table class="table table-bordered">
@@ -435,119 +436,170 @@
                                     </tr>
                                 </tbody>
                             </table>
-                        </form>
-                        <div class="modal fade" id="addAddressModal" tabindex="-1"
-                            aria-labelledby="addAddressModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-lg">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="addAddressModalLabel">Agregar domicilio</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <form id="addAddressForm">
-                                            <div class="row mb-3">
-                                                <div class="col-md-6">
-                                                    <label for="pais" class="form-label">País</label>
-                                                    <select id="pais" class="form-select" required>
-                                                        <option value="Perú">Perú</option>
-                                                        <option value="Chile">Chile</option>
-                                                        <option value="Argentina">Argentina</option>
-                                                    </select>
+                        
+                            <div class="modal fade" id="addAddressModal" tabindex="-1"
+                                aria-labelledby="addAddressModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="addAddressModalLabel">Agregar domicilio</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form id="addAddressForm">
+                                                <div class="row mb-3">
+                                                    <div class="col-md-6">
+                                                        <label for="pais" class="form-label">País</label>
+                                                        <select id="pais" class="form-select" required>
+                                                            <option value="Perú">Perú</option>
+                                                            <option value="Chile">Chile</option>
+                                                            <option value="Argentina">Argentina</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-6" hidden>
+                                                        <label for="extranjero" class="form-label">País</label>
+                                                        <select id="extranjero" class="form-select" required>
+                                                            <option value="-">-</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="departamento" class="form-label">Departamento</label>
+                                                        <select id="departamento" class="form-select" required>
+                                                            <option value="">Seleccionar</option>
+                                                            <option value="02 Ancash">02 Ancash</option>
+                                                            <option value="15 Lima">15 Lima</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
-                                                <div class="col-md-6" hidden>
-                                                    <label for="extranjero" class="form-label">País</label>
-                                                    <select id="extranjero" class="form-select" required>
-                                                        <option value="-">-</option>
-                                                    </select>
+                                                <div class="row mb-3">
+                                                    <div class="col-md-6">
+                                                        <label for="provincia" class="form-label">Provincia</label>
+                                                        <select id="provincia" class="form-select" required>
+                                                            <option value="">Seleccionar</option>
+                                                            <option value="02 Aija">02 Aija</option>
+                                                            <option value="01 Lima">01 Lima</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="distrito" class="form-label">Distrito</label>
+                                                        <select id="distrito" class="form-select" required>
+                                                            <option value="">Seleccionar</option>
+                                                            <option value="02 Coris">02 Coris</option>
+                                                            <option value="35 San Martín de Porres">35 San Martín de Porres
+                                                            </option>
+                                                        </select>
+                                                    </div>
                                                 </div>
-                                                <div class="col-md-6">
-                                                    <label for="departamento" class="form-label">Departamento</label>
-                                                    <select id="departamento" class="form-select" required>
-                                                        <option value="">Seleccionar</option>
-                                                        <option value="02 Ancash">02 Ancash</option>
-                                                        <option value="15 Lima">15 Lima</option>
-                                                    </select>
+                                                <div class="row mb-3">
+                                                    <div class="col-md-6">
+                                                        <label for="tipoVia" class="form-label">Tipo de Vía</label>
+                                                        <select id="tipoVia" class="form-select" required>
+                                                            <option value="">Seleccionar</option>
+                                                            <option value="Avenida">Avenida</option>
+                                                            <option value="Calle">Calle</option>
+                                                            <option value="Jirón">Jirón</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="nombreVia" class="form-label">Nombre de la Vía</label>
+                                                        <input type="text" id="nombreVia" class="form-control" required>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="row mb-3">
-                                                <div class="col-md-6">
-                                                    <label for="provincia" class="form-label">Provincia</label>
-                                                    <select id="provincia" class="form-select" required>
-                                                        <option value="">Seleccionar</option>
-                                                        <option value="02 Aija">02 Aija</option>
-                                                        <option value="01 Lima">01 Lima</option>
-                                                    </select>
+                                                <div class="row mb-3">
+                                                    <div class="col-md-6">
+                                                        <label for="tipo" class="form-label">Tipo</label>
+                                                        <select id="tipo" class="form-select" required>
+                                                            <option value="">Seleccionar</option>
+                                                            <option value="Mz">Mz</option>
+                                                            <option value="Lt">Lt</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="numeroInmueble" class="form-label">Número de
+                                                            Inmueble</label>
+                                                        <input type="text" id="numeroInmueble" class="form-control"
+                                                            required>
+                                                    </div>
                                                 </div>
-                                                <div class="col-md-6">
-                                                    <label for="distrito" class="form-label">Distrito</label>
-                                                    <select id="distrito" class="form-select" required>
-                                                        <option value="">Seleccionar</option>
-                                                        <option value="02 Coris">02 Coris</option>
-                                                        <option value="35 San Martín de Porres">35 San Martín de Porres
-                                                        </option>
-                                                    </select>
+                                                <div class="row mb-3">
+                                                    <div class="col-md-6">
+                                                        <label for="tipoZona" class="form-label">Tipo de Zona</label>
+                                                        <select id="tipoZona" class="form-select" required>
+                                                            <option value="">Seleccionar</option>
+                                                            <option value="Mz">Urbana</option>
+                                                            <option value="Lt">Rural</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="nombreZona" class="form-label">Nombre de la Zona</label>
+                                                        <input type="text" id="nombreZona" class="form-control"
+                                                            required>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="row mb-3">
-                                                <div class="col-md-6">
-                                                    <label for="tipoVia" class="form-label">Tipo de Vía</label>
-                                                    <select id="tipoVia" class="form-select" required>
-                                                        <option value="">Seleccionar</option>
-                                                        <option value="Avenida">Avenida</option>
-                                                        <option value="Calle">Calle</option>
-                                                        <option value="Jirón">Jirón</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <label for="nombreVia" class="form-label">Nombre de la Vía</label>
-                                                    <input type="text" id="nombreVia" class="form-control" required>
-                                                </div>
-                                            </div>
-                                            <div class="row mb-3">
-                                                <div class="col-md-6">
-                                                    <label for="tipo" class="form-label">Tipo</label>
-                                                    <select id="tipo" class="form-select" required>
-                                                        <option value="">Seleccionar</option>
-                                                        <option value="Mz">Mz</option>
-                                                        <option value="Lt">Lt</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <label for="numeroInmueble" class="form-label">Número de
-                                                        Inmueble</label>
-                                                    <input type="text" id="numeroInmueble" class="form-control"
-                                                        required>
-                                                </div>
-                                            </div>
-                                            <div class="row mb-3">
-                                                <div class="col-md-6">
-                                                    <label for="tipoZona" class="form-label">Tipo de Zona</label>
-                                                    <select id="tipoZona" class="form-select" required>
-                                                        <option value="">Seleccionar</option>
-                                                        <option value="Mz">Urbana</option>
-                                                        <option value="Lt">Rural</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <label for="nombreZona" class="form-label">Nombre de la Zona</label>
-                                                    <input type="text" id="nombreZona" class="form-control"
-                                                        required>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">CANCELAR</button>
-                                        <button type="button" class="btn btn-primary"
-                                            id="saveAddressBtn">GUARDAR</button>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">CANCELAR</button>
+                                            <button type="button" class="btn btn-primary"
+                                                id="saveAddressBtn">GUARDAR</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </form>
+
+                        <!--DATOS EMERGENCIA-->
+                        <p class="titleps">1.1.- PERSONAS A COMUNICAR EN CASO DE EMERGENCIA:</p>
+                        <form class="formdtsem">
+                            <!-- Contacto 1 -->
+                            <div class="contact-section">
+                                <p class="ctsfmlrs">Contacto 1 (*)</p>
+                                <div class="row g-3 mb-4">
+                                    <div class="col-md-4">
+                                        <label for="nombre1" class="form-label">Apellidos y nombres</label>
+                                        <input type="text" id="nombre1" class="form-control">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="parentesco1" class="form-label">Parentesco</label>
+                                        <input type="text" id="parentesco1" class="form-control">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="telefono1" class="form-label">Teléfono</label>
+                                        <input type="text" id="telefono1" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Contacto 2 -->
+                            <div class="contact-section">
+                                <p class="ctsfmlrs">Contacto 2 (*)</p>
+                                <div class="row g-3 mb-4">
+                                    <div class="col-md-4">
+                                        <label for="nombre2" class="form-label">Apellidos y nombres</label>
+                                        <input type="text" id="nombre2" class="form-control">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="parentesco2" class="form-label">Parentesco</label>
+                                        <input type="text" id="parentesco2" class="form-control">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="telefono2" class="form-label">Teléfono</label>
+                                        <input type="text" id="telefono2" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                        <!-- DATOS FAMILIARES-->
+                        <p class="titleps">1.2.- DATOS FAMILIARES: (Padres, Cónyuge, Hijos)</p>
+                        <form class="formdtsfm">
+                            <p class="sbtem">Familiar</p>
+                            <button type="button" class="btnfml">AÑADIR FAMILIAR</button>
+                        </form>
                     </div>
+
                     <div class="tab-pane fade" id="second" role="tabpanel" aria-labelledby="second-tab">
                         <!-- Contenido del segundo tab -->
                         <h5>Contenido del 2do tab</h5>

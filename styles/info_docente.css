@@ -1,15 +1,16 @@
+/* Contenido de la página */
 .main-content {
     padding-top: 50px;
     padding-left: 40px;
     padding-right: 40px;
 }
-
+/* Header de la página */
 .content-header {
     display: flex; 
     align-items: center; 
     padding-top: 30px;
 }
-
+/* Imagen del docente */
 .docente-img {
     width: 120px;
     height: 120px;
@@ -18,18 +19,16 @@
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
+/* docente info arriba */
 .docente-info h4 {
     font-size: 18px;
     font-weight: 500;
     color: #333;
 }
-
 .docente-info p {
     font-size: 14px;
 }
-
-/* Update/modify these CSS rules */
+    /* Botones --  */
 .btns {
     margin-top: 12px;
 }
@@ -63,7 +62,7 @@
 .btn-success, .btn-danger {
     font-size: 0.875rem;
 }
-
+/* Contenido de tabla */
 .tab-content {
     border-left: 1px solid #DEE2E6;
     border-bottom: 1px solid #DEE2E6;
@@ -71,24 +70,35 @@
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
     padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 30px;
     padding-top: 25px;
     margin-top: -10px;
 }
 
-.titletbs, .sbttbs {
+.titletbs, .sbtdp, .titleps, .sbtem {
     color: #224FB1;
     font-weight: 400;
     font-size: 24px;
 }
 
 .titletbs {
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
-
-.sbttbs {
+.titleps {
+    margin-top: 50px;
+    margin-bottom: -15px;
+}
+/* Subpartes de la página */
+.sbtdp {
     padding-top: 20px;
     margin-bottom: 4px;
+}
+.sbtem {
+    color: #224FB1;
+    font-weight: 400;
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 15px;
 }
 
 .sex-select, .nc-select {
@@ -107,4 +117,57 @@
     margin-bottom: 20px;
     border: none;
     border-radius: 2px;
+}
+.btnfml {
+    background-color: #224FB1;
+    color: white;
+    padding: 8px 16px;
+    font-size: 12px;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.formdts {
+    padding-left: 20px;
+    margin-top: 20px;
+}
+.formdtsem {
+    padding-left: 20px;
+    margin-top: 35px;
+    margin-bottom: -15px;
+}
+.formdtsfm {
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.ctsfmlrs {
+    color: #224FB1;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.contactos{
+    padding-left: 20px;
+}
+
+.btnfml:hover {
+    background-color: #1a3f8f;
+}
+.contact-section {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    padding: 8px 12px;
 }
