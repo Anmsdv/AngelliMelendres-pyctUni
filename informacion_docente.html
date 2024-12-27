@@ -423,7 +423,7 @@
                                     <tr>
                                         <td>1</td>
                                         <td>Perú</td>
-                                        <td></td>
+                                        <td>-</td>
                                         <td>15 Lima</td>
                                         <td>01 Lima</td>
                                         <td>35 San Martín de Porres</td>
@@ -593,10 +593,154 @@
                         </form>
 
                         <!-- DATOS FAMILIARES-->
-                        <p class="titleps">1.2.- DATOS FAMILIARES: (Padres, Cónyuge, Hijos)</p>
+                        <p class="titledf">1.2.- DATOS FAMILIARES: (Padres, Cónyuge, Hijos)</p>
                         <form class="formdtsfm">
                             <p class="sbtem">Familiar</p>
                             <button type="button" class="btnfml">AÑADIR FAMILIAR</button>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Apellidos y Nombres</th>
+                                        <th>Fecha de Nacimiento</th>
+                                        <th>Parentesco</th>
+                                        <th>Estado Civil</th>
+                                        <th>Nivel de Estudios</th>
+                                        <th>Ocupación</th>
+                                        <th>Dependencia Personal</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="addressTableBody">
+                                    <tr>
+                                        <td>Maria Fernanda Lopez Gonzales</td>
+                                        <td>2005-04-01</td>
+                                        <td>Conyugal</td>
+                                        <td>Soltera</td>
+                                        <td>Primario</td>
+                                        <td>Estudiante</td>
+                                        <td>Sí</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Maria Fernanda Obregon Lopez</td>
+                                        <td>1970-05-09</td>
+                                        <td>Parental</td>
+                                        <td>Soltera</td>
+                                        <td>Primario</td>
+                                        <td>Estudiante</td>
+                                        <td>Sí</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="modal fade" id="addFamilyModal" tabindex="-1"
+                                aria-labelledby="addFamilyModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="addAddressModalLabel">Agregar domicilio</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form id="addAddressForm">
+                                                <div class="row mb-3">
+                                                    <div class="col-md-6">
+                                                        <label for="pais" class="form-label">País</label>
+                                                        <select id="pais" class="form-select" required>
+                                                            <option value="Perú">Perú</option>
+                                                            <option value="Chile">Chile</option>
+                                                            <option value="Argentina">Argentina</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-6" hidden>
+                                                        <label for="extranjero" class="form-label">País</label>
+                                                        <select id="extranjero" class="form-select" required>
+                                                            <option value="-">-</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="departamento" class="form-label">Departamento</label>
+                                                        <select id="departamento" class="form-select" required>
+                                                            <option value="">Seleccionar</option>
+                                                            <option value="02 Ancash">02 Ancash</option>
+                                                            <option value="15 Lima">15 Lima</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <div class="col-md-6">
+                                                        <label for="provincia" class="form-label">Provincia</label>
+                                                        <select id="provincia" class="form-select" required>
+                                                            <option value="">Seleccionar</option>
+                                                            <option value="02 Aija">02 Aija</option>
+                                                            <option value="01 Lima">01 Lima</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="distrito" class="form-label">Distrito</label>
+                                                        <select id="distrito" class="form-select" required>
+                                                            <option value="">Seleccionar</option>
+                                                            <option value="02 Coris">02 Coris</option>
+                                                            <option value="35 San Martín de Porres">35 San Martín de Porres
+                                                            </option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <div class="col-md-6">
+                                                        <label for="tipoVia" class="form-label">Tipo de Vía</label>
+                                                        <select id="tipoVia" class="form-select" required>
+                                                            <option value="">Seleccionar</option>
+                                                            <option value="Avenida">Avenida</option>
+                                                            <option value="Calle">Calle</option>
+                                                            <option value="Jirón">Jirón</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="nombreVia" class="form-label">Nombre de la Vía</label>
+                                                        <input type="text" id="nombreVia" class="form-control" required>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <div class="col-md-6">
+                                                        <label for="tipo" class="form-label">Tipo</label>
+                                                        <select id="tipo" class="form-select" required>
+                                                            <option value="">Seleccionar</option>
+                                                            <option value="Mz">Mz</option>
+                                                            <option value="Lt">Lt</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="numeroInmueble" class="form-label">Número de
+                                                            Inmueble</label>
+                                                        <input type="text" id="numeroInmueble" class="form-control"
+                                                            required>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <div class="col-md-6">
+                                                        <label for="tipoZona" class="form-label">Tipo de Zona</label>
+                                                        <select id="tipoZona" class="form-select" required>
+                                                            <option value="">Seleccionar</option>
+                                                            <option value="Mz">Urbana</option>
+                                                            <option value="Lt">Rural</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="nombreZona" class="form-label">Nombre de la Zona</label>
+                                                        <input type="text" id="nombreZona" class="form-control"
+                                                            required>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">CANCELAR</button>
+                                            <button type="button" class="btn btn-primary"
+                                                id="saveAddressBtn">GUARDAR</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </form>
                     </div>
 
