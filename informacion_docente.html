@@ -639,105 +639,6 @@
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
-                                        <div class="modal-body">
-                                            <form id="addAddressForm">
-                                                <div class="row mb-3">
-                                                    <div class="col-md-6">
-                                                        <label for="pais" class="form-label">País</label>
-                                                        <select id="pais" class="form-select" required>
-                                                            <option value="Perú">Perú</option>
-                                                            <option value="Chile">Chile</option>
-                                                            <option value="Argentina">Argentina</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-md-6" hidden>
-                                                        <label for="extranjero" class="form-label">País</label>
-                                                        <select id="extranjero" class="form-select" required>
-                                                            <option value="-">-</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <label for="departamento" class="form-label">Departamento</label>
-                                                        <select id="departamento" class="form-select" required>
-                                                            <option value="">Seleccionar</option>
-                                                            <option value="02 Ancash">02 Ancash</option>
-                                                            <option value="15 Lima">15 Lima</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="row mb-3">
-                                                    <div class="col-md-6">
-                                                        <label for="provincia" class="form-label">Provincia</label>
-                                                        <select id="provincia" class="form-select" required>
-                                                            <option value="">Seleccionar</option>
-                                                            <option value="02 Aija">02 Aija</option>
-                                                            <option value="01 Lima">01 Lima</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <label for="distrito" class="form-label">Distrito</label>
-                                                        <select id="distrito" class="form-select" required>
-                                                            <option value="">Seleccionar</option>
-                                                            <option value="02 Coris">02 Coris</option>
-                                                            <option value="35 San Martín de Porres">35 San Martín de Porres
-                                                            </option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="row mb-3">
-                                                    <div class="col-md-6">
-                                                        <label for="tipoVia" class="form-label">Tipo de Vía</label>
-                                                        <select id="tipoVia" class="form-select" required>
-                                                            <option value="">Seleccionar</option>
-                                                            <option value="Avenida">Avenida</option>
-                                                            <option value="Calle">Calle</option>
-                                                            <option value="Jirón">Jirón</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <label for="nombreVia" class="form-label">Nombre de la Vía</label>
-                                                        <input type="text" id="nombreVia" class="form-control" required>
-                                                    </div>
-                                                </div>
-                                                <div class="row mb-3">
-                                                    <div class="col-md-6">
-                                                        <label for="tipo" class="form-label">Tipo</label>
-                                                        <select id="tipo" class="form-select" required>
-                                                            <option value="">Seleccionar</option>
-                                                            <option value="Mz">Mz</option>
-                                                            <option value="Lt">Lt</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <label for="numeroInmueble" class="form-label">Número de
-                                                            Inmueble</label>
-                                                        <input type="text" id="numeroInmueble" class="form-control"
-                                                            required>
-                                                    </div>
-                                                </div>
-                                                <div class="row mb-3">
-                                                    <div class="col-md-6">
-                                                        <label for="tipoZona" class="form-label">Tipo de Zona</label>
-                                                        <select id="tipoZona" class="form-select" required>
-                                                            <option value="">Seleccionar</option>
-                                                            <option value="Mz">Urbana</option>
-                                                            <option value="Lt">Rural</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <label for="nombreZona" class="form-label">Nombre de la Zona</label>
-                                                        <input type="text" id="nombreZona" class="form-control"
-                                                            required>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-bs-dismiss="modal">CANCELAR</button>
-                                            <button type="button" class="btn btn-primary"
-                                                id="saveAddressBtn">GUARDAR</button>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -745,12 +646,91 @@
                     </div>
 
                     <div class="tab-pane fade" id="second" role="tabpanel" aria-labelledby="second-tab">
-                        <!-- Contenido del segundo tab -->
-                        <h5>Contenido del 2do tab</h5>
+                        <!-- Segundo tab -->
+                        <!--DATOS LABORALES-->
+                        <p class="titletbs">2.- DATOS LABORALES</p>
+                        <form class="formdts">
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="condition-select" class="form-label">Condición (C/N)</label>
+                                    <select id="condition-select" class="form-select condition-select">
+                                        <option value="masculino">Contratado</option>
+                                        <option value="femenino">Desempleado</option>
+                                        <option value="otro">Otro</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="category-select" class="form-label">Categoria</label>
+                                    <select id="category-select" class="form-select category-select">
+                                        <option value="Planilla">Planilla</option>
+                                        <option value="Temporal">Temporal</option>
+                                        <option value="otro">Otro</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="dedicacion-select" class="form-label">Dedicación</label>
+                                    <select id="dedicacion-select" class="form-select dedicacion-select">
+                                        <option value="A1">A1</option>
+                                        <option value="B1">B1</option>
+                                        <option value="otro">Otro</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="horas" class="form-label">Horas</label>
+                                    <input type="text" id="horas" class="form-control" value="32">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="horas_lectivas" class="form-label">Horas Lectivas</label>
+                                    <input type="text" id="horas_lectivas" class="form-control" value="16">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="dependencia_laboral" class="form-label">Dependencia donde labora (Actual)</label>
+                                    <input type="text" id="dependencia_laboral" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="fecha_ingresoFIM" class="form-label">Fecha Ingreso FIM</label>
+                                    <input type="date" id="fecha_ingresoFIM" class="form-control">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="fecha_nombramiento" class="form-label">Fecha Nombramiento</label>
+                                    <input type="date" id="fecha_nombramiento" class="form-control">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="regimenPen-select" class="form-label">Régimen Pensionario</label>
+                                    <select id="regimenPen-select" class="form-select regimenPen-select">
+                                        <option value="AFP">AFP</option>
+                                        <option value="ONP">ONP</option>
+                                        <option value="otro">Otro</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="afpname" class="form-label">AFP(Nombre)</label>
+                                    <input type="text" id="afpname" class="form-control">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="afpcode" class="form-label">Cód. AFP</label>
+                                    <input type="text" id="afpcode" class="form-control">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="essldcode" class="form-label">Cód. Essalud</label>
+                                    <input type="text" id="essldcode" class="form-control">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="otrTp_seguro" class="form-label">Otro Tipo de Seguro</label>
+                                    <input type="text" id="otrTp_seguro" class="form-control">
+                                </div>
+                            </div>
+                        </form>
                     </div>
                     <div class="tab-pane fade" id="third" role="tabpanel" aria-labelledby="third-tab">
                         <!-- Contenido del tercer tab -->
-                        <h5>Contenido del 3ro tab</h5>
+                        <h5>Contenid</h5>
                     </div>
                     <div class="tab-pane fade" id="fourth" role="tabpanel" aria-labelledby="fourth-tab">
                         <!-- Contenido del cuarto tab -->
