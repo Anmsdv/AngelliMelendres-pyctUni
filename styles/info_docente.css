@@ -73,6 +73,7 @@
     padding-right: 30px;
     padding-top: 25px;
     margin-top: -10px;
+    padding-bottom: 30px;
 }
 
 .titletbs, .sbtdp, .titleps, .sbtem, .titledf {
@@ -101,7 +102,6 @@
     margin-top: 30px;
     margin-bottom: 5px;
 }
-
 .sex-select, .nc-select {
     margin-top: 10px;
     padding: 10px;

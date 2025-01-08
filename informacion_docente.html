@@ -650,78 +650,78 @@
                         <!--DATOS LABORALES-->
                         <p class="titletbs">2.- DATOS LABORALES</p>
                         <form class="formdts">
-                            <div class="row mb-3">
-                                <div class="col-md-6">
+                            <div class="row g-4">
+                                <!-- Primera fila -->
+                                <div class="col-md-3">
                                     <label for="condition-select" class="form-label">Condición (C/N)</label>
-                                    <select id="condition-select" class="form-select condition-select">
-                                        <option value="masculino">Contratado</option>
-                                        <option value="femenino">Desempleado</option>
+                                    <select id="condition-select" class="form-select">
+                                        <option value="Contratado">Contratado</option>
+                                        <option value="Desempleado">Desempleado</option>
                                         <option value="otro">Otro</option>
                                     </select>
                                 </div>
-                                <div class="col-md-6">
-                                    <label for="category-select" class="form-label">Categoria</label>
-                                    <select id="category-select" class="form-select category-select">
+                                <div class="col-md-3">
+                                    <label for="category-select" class="form-label">Categoría</label>
+                                    <select id="category-select" class="form-select">
                                         <option value="Planilla">Planilla</option>
                                         <option value="Temporal">Temporal</option>
                                         <option value="otro">Otro</option>
                                     </select>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-3">
                                     <label for="dedicacion-select" class="form-label">Dedicación</label>
-                                    <select id="dedicacion-select" class="form-select dedicacion-select">
-                                        <option value="A1">A1</option>
+                                    <select id="dedicacion-select" class="form-select">
                                         <option value="B1">B1</option>
+                                        <option value="A1">A1</option>
                                         <option value="otro">Otro</option>
                                     </select>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-3">
                                     <label for="horas" class="form-label">Horas</label>
-                                    <input type="text" id="horas" class="form-control" value="32">
+                                    <input type="text" id="horas" class="form-control bg-light" value="32" readonly>
                                 </div>
-                            </div>
-                            <div class="row mb-3">
-                                <div class="col-md-6">
+                    
+                                <!-- Segunda fila -->
+                                <div class="col-md-3">
                                     <label for="horas_lectivas" class="form-label">Horas Lectivas</label>
-                                    <input type="text" id="horas_lectivas" class="form-control" value="16">
+                                    <input type="text" id="horas_lectivas" class="form-control bg-light" value="16" readonly>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-9">
                                     <label for="dependencia_laboral" class="form-label">Dependencia donde labora (Actual)</label>
                                     <input type="text" id="dependencia_laboral" class="form-control">
                                 </div>
-                            </div>
-                            <div class="row mb-3">
-                                <div class="col-md-6">
+                    
+                                <!-- Tercera fila -->
+                                <div class="col-md-4">
                                     <label for="fecha_ingresoFIM" class="form-label">Fecha Ingreso FIM</label>
                                     <input type="date" id="fecha_ingresoFIM" class="form-control">
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-4">
                                     <label for="fecha_nombramiento" class="form-label">Fecha Nombramiento</label>
                                     <input type="date" id="fecha_nombramiento" class="form-control">
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-4">
                                     <label for="regimenPen-select" class="form-label">Régimen Pensionario</label>
-                                    <select id="regimenPen-select" class="form-select regimenPen-select">
+                                    <select id="regimenPen-select" class="form-select">
                                         <option value="AFP">AFP</option>
                                         <option value="ONP">ONP</option>
                                         <option value="otro">Otro</option>
                                     </select>
                                 </div>
-                            </div>
-                            <div class="row mb-3">
-                                <div class="col-md-6">
+                                <!-- Cuarta fila -->
+                                <div class="col-md-3">
                                     <label for="afpname" class="form-label">AFP(Nombre)</label>
                                     <input type="text" id="afpname" class="form-control">
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-3">
                                     <label for="afpcode" class="form-label">Cód. AFP</label>
                                     <input type="text" id="afpcode" class="form-control">
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-3">
                                     <label for="essldcode" class="form-label">Cód. Essalud</label>
                                     <input type="text" id="essldcode" class="form-control">
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-3">
                                     <label for="otrTp_seguro" class="form-label">Otro Tipo de Seguro</label>
                                     <input type="text" id="otrTp_seguro" class="form-control">
                                 </div>
@@ -729,8 +729,87 @@
                         </form>
                     </div>
                     <div class="tab-pane fade" id="third" role="tabpanel" aria-labelledby="third-tab">
-                        <!-- Contenido del tercer tab -->
-                        <h5>Contenid</h5>
+                        <!-- Tercer tab -->
+                        <!--DATOS DE FORMACION PROFESIONAL-->
+                        <p class="titletbs">3.- DATOS DE FORMACIÓN PROFESIONAL: Indicar Grados y Títulos obtenidos, señalando Fecha de Revalidación, para el caso de Títulos y Grados otorgados en el Extrangero</p>
+                            <button type="button" class="btnfml">AÑADIR REGISTRO</button>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Orden</th>
+                                        <th>Formación Profesional</th>
+                                        <th>País</th>
+                                        <th>Universidad</th>
+                                        <th>Especialidad</th>
+                                        <th>Fecha Inicio</th>
+                                        <th>Fecha Final</th>
+                                        <th>Grado Obtenido</th>
+                                        <th>Documento Sustentatorio</th>
+                                        <th>Observación</th>
+                                        <th>Opciones</th>    
+                                    </tr>
+                                </thead>
+                                <tbody id="addressTableBody">
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Título Profesional</td>
+                                        <td>Perú</td>
+                                        <td>UNIVERSIDAD NACIONAL DE INGENIERIA</td>
+                                        <td>Ingeniero en la especialidad de Ingeniería Mecánica</td>
+                                        <td>08/08/93</td>
+                                        <td>12/12/99</td>
+                                        <td>Titulado</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><button type="button" class="btn btn-success btn-sm me-2">
+                                            <i class="fa-solid fa-pen"></i>
+                                        </button></td>
+                                        <td><button type="button" class="btn btn-success btn-sm me-2">
+                                            <i class="fa-solid fa-x"></i></i>
+                                        </button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Maestría</td>
+                                        <td>Perú</td>
+                                        <td>PONTIFICIA UNIVERSIDAD CATOLICA DEL PERÚ</td>
+                                        <td>Estudios completos de maestría en Ingeniería</td>
+                                        <td>04/04/02</td>
+                                        <td>12/12/06</td>
+                                        <td>Magister</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><button type="button" class="btn btn-success btn-sm me-2">
+                                            <i class="fa-solid fa-pen"></i>
+                                        </button></td>
+                                        <td><button type="button" class="btn btn-success btn-sm me-2">
+                                            <i class="fa-solid fa-x"></i></i>
+                                        </button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Maestría</td>
+                                        <td>Perú</td>
+                                        <td>UNIVERSIDAD ANTONIO RUIZ DE MONTOYA</td>
+                                        <td>Maestría en educación con mención en docencia</td>
+                                        <td>03/03/17</td>
+                                        <td>12/12/19</td>
+                                        <td>Magister</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>
+                                            <div class="row">
+                                                <button type="button" class="btn btn-success btn-sm me-2">
+                                                    <i class="fa-solid fa-pen"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-success btn-sm me-2">
+                                                    <i class="fa-solid fa-x"></i></i>
+                                                </button> 
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                     </div>
                     <div class="tab-pane fade" id="fourth" role="tabpanel" aria-labelledby="fourth-tab">
                         <!-- Contenido del cuarto tab -->
