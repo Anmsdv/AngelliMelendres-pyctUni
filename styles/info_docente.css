@@ -76,7 +76,7 @@
     padding-bottom: 30px;
 }
 
-.titletbs, .sbtdp, .titleps, .sbtem, .titledf {
+.titletbs, .sbtdp, .titleps, .sbtem, .titledf, .sbtdom{
     color: #224FB1;
     font-weight: 400;
     font-size: 24px;
@@ -97,6 +97,10 @@
 .sbtdp {
     padding-top: 20px;
     margin-bottom: 4px;
+}
+.sbtdom {
+    padding-top: 20px;
+    margin-bottom: -20px;
 }
 .sbtem {
     margin-top: 30px;
@@ -125,9 +129,10 @@
     padding: 8px;
     font-size: 12px;
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border: none;
     border-radius: 2px;
+    margin-top: 10px;
 }
 .btnfml:hover {
     background-color: #1a3f8f;
@@ -169,5 +174,65 @@
 .contact-section {
     margin-bottom: 20px;
 }
+/*tabla*/
+.table-responsive {
+    margin-top: 1rem;
+}
 
+.table {
+    font-size: 14px;
+    vertical-align: middle;
+}
 
+.table thead th {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #dee2e6;
+    color: #495057;
+    font-weight: 500;
+    padding: 12px 8px;
+    white-space: nowrap;
+}
+
+.table tbody td {
+    padding: 12px 8px;
+    vertical-align: middle;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+/* Botón de registro */
+.btn-registro {
+    background-color: #224FB1;
+    color: white;
+    padding: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    border: none;
+    border-radius: 2px;
+}
+
+.btn-registro:hover {
+    background-color: #1a3f8f;
+}
+
+/* Botones de acción */
+.btn-primary {
+    background-color: #224FB1;
+    border-color: #224FB1;
+    padding: 4px 8px;
+}
+
+.btn-primary:hover {
+    background-color: #1a3f8f;
+    border-color: #1a3f8f;
+}
+
+.btn-danger {
+    padding: 4px 8px;
+}
+
+.btn-sm {
+    font-size: 12px;
+}

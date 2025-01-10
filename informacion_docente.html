@@ -399,44 +399,61 @@
                                     </select>
                                 </div>
                             </div>
-                            <p class="sbtdp">Domicilio</p>
-                            <button type="button" class="btnRgstro" id="addAddressBtn">AÑADIR REGISTRO</button>
+                            <!--Domicilio-->
+                            <p class="sbtdom">Domicilio</p>
+                            <div class="table-responsive">
+                                <div class="d-flex justify-content-start mb-3">
+                                    <button type="button" class="btnfml" id="addAddressBtn">AÑADIR REGISTRO</button>
+                                </div>
+                                <table class="table table-hover table-bordered align-middle">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th class="text-center" style="width: 5%">Orden</th>
+                                            <th style="width: 6%">País</th>
+                                            <th style="width: 9%">Dirección extranjera</th>
+                                            <th style="width: 12%">Departamento</th>
+                                            <th style="width: 10%">Provincia</th>
+                                            <th style="width: 19%">Distrito</th>
+                                            <th style="width: 7%">Tipo de Vía</th>
+                                            <th style="width: 8%">Nombre de la Vía</th>
+                                            <th style="width: 5%">Tipo</th>
+                                            <th style="width: 6%">Número de Inmueble</th>
+                                            <th style="width: 8%">Tipo de Zona</th>
+                                            <th style="width: 10%">Nombre de la Zona</th>
+                                            <th class="text-center" style="width: 100px">Opciones</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="addressTableBody">
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Perú</td>
+                                            <td>-</td>
+                                            <td>15 Lima</td>
+                                            <td>01 Lima</td>
+                                            <td>35 San Martín de Porres</td>
+                                            <td>Calle</td>
+                                            <td>Calle 9</td>
+                                            <td>Mz</td>
+                                            <td>F</td>
+                                            <td>Urbana</td>
+                                            <td>Los Jazmines</td>
+                                            <td>
+                                                <div class="d-flex gap-2 justify-content-center">
+                                                    <button type="button" class="btn btn-primary btn-sm">
+                                                        <i class="fa-solid fa-pen"></i>
+                                                    </button>
+                                                    <button type="button" class="btn btn-danger btn-sm">
+                                                        <i class="fa-solid fa-x"></i>
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
 
-                            <table class="table table-bordered">
-                                <thead>
-                                    <tr>
-                                        <th>Orden</th>
-                                        <th>País</th>
-                                        <th>Dirección extranjera</th>
-                                        <th>Departamento</th>
-                                        <th>Provincia</th>
-                                        <th>Distrito</th>
-                                        <th>Tipo de Vía</th>
-                                        <th>Nombre de la Vía</th>
-                                        <th>Tipo</th>
-                                        <th>Número de Inmueble</th>
-                                        <th>Tipo de Zona</th>
-                                        <th>Nombre de la Zona</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="addressTableBody">
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Perú</td>
-                                        <td>-</td>
-                                        <td>15 Lima</td>
-                                        <td>01 Lima</td>
-                                        <td>35 San Martín de Porres</td>
-                                        <td>-</td>
-                                        <td>-</td>
-                                        <td>Mz</td>
-                                        <td>F</td>
-                                        <td>Urbana</td>
-                                        <td>-</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        
+                            <!--Modal-->
+                            
                             <div class="modal fade" id="addAddressModal" tabindex="-1"
                                 aria-labelledby="addAddressModalLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-lg">
@@ -594,53 +611,65 @@
 
                         <!-- DATOS FAMILIARES-->
                         <p class="titledf">1.2.- DATOS FAMILIARES: (Padres, Cónyuge, Hijos)</p>
-                        <form class="formdtsfm">
-                            <p class="sbtem">Familiar</p>
-                            <button type="button" class="btnfml">AÑADIR FAMILIAR</button>
-                            <table class="table table-bordered">
-                                <thead>
-                                    <tr>
-                                        <th>Apellidos y Nombres</th>
-                                        <th>Fecha de Nacimiento</th>
-                                        <th>Parentesco</th>
-                                        <th>Estado Civil</th>
-                                        <th>Nivel de Estudios</th>
-                                        <th>Ocupación</th>
-                                        <th>Dependencia Personal</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="addressTableBody">
-                                    <tr>
-                                        <td>Maria Fernanda Lopez Gonzales</td>
-                                        <td>2005-04-01</td>
-                                        <td>Conyugal</td>
-                                        <td>Soltera</td>
-                                        <td>Primario</td>
-                                        <td>Estudiante</td>
-                                        <td>Sí</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Maria Fernanda Obregon Lopez</td>
-                                        <td>1970-05-09</td>
-                                        <td>Parental</td>
-                                        <td>Soltera</td>
-                                        <td>Primario</td>
-                                        <td>Estudiante</td>
-                                        <td>Sí</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <div class="modal fade" id="addFamilyModal" tabindex="-1"
-                                aria-labelledby="addFamilyModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="addAddressModalLabel">Agregar domicilio</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                    </div>
+                        <form class="formdts">
+                            <div class="table-responsive">
+                                <div class="d-flex justify-content-start mb-3">
+                                    <button type="button" class="btnfml">AÑADIR FAMILIAR</button>
                                 </div>
+                                <table class="table table-hover table-bordered align-middle">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th style="width: 20%">Apellidos y Nombres</th>
+                                            <th style="width: 14%">Fecha de Nacimiento</th>
+                                            <th style="width: 11%">Parentesco</th>
+                                            <th style="width: 11%">Estado Civil</th>
+                                            <th style="width: 11%">Nivel de Estudios</th>
+                                            <th style="width: 11%">Ocupación</th>
+                                            <th style="width: 10%">Dependencia Personal</th>
+                                            <th class="text-center" style="width: 100px">Opciones</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Maria Fernanda Lopez Gonzales</td>
+                                            <td>2005-04-01</td>
+                                            <td>Conyugal</td>
+                                            <td>Soltera</td>
+                                            <td>Primario</td>
+                                            <td>Estudiante</td>
+                                            <td>Sí</td>
+                                            <td>
+                                                <div class="d-flex gap-2 justify-content-center">
+                                                    <button type="button" class="btn btn-primary btn-sm">
+                                                        <i class="fa-solid fa-pen"></i>
+                                                    </button>
+                                                    <button type="button" class="btn btn-danger btn-sm">
+                                                        <i class="fa-solid fa-x"></i>
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Maria Fernanda Obregon Lopez</td>
+                                            <td>1970-05-09</td>
+                                            <td>Parental</td>
+                                            <td>Soltera</td>
+                                            <td>Primario</td>
+                                            <td>Estudiante</td>
+                                            <td>Sí</td>
+                                            <td>
+                                                <div class="d-flex gap-2 justify-content-center">
+                                                    <button type="button" class="btn btn-primary btn-sm">
+                                                        <i class="fa-solid fa-pen"></i>
+                                                    </button>
+                                                    <button type="button" class="btn btn-danger btn-sm">
+                                                        <i class="fa-solid fa-x"></i>
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </form>
                     </div>
@@ -732,26 +761,29 @@
                         <!-- Tercer tab -->
                         <!--DATOS DE FORMACION PROFESIONAL-->
                         <p class="titletbs">3.- DATOS DE FORMACIÓN PROFESIONAL: Indicar Grados y Títulos obtenidos, señalando Fecha de Revalidación, para el caso de Títulos y Grados otorgados en el Extrangero</p>
-                            <button type="button" class="btnfml">AÑADIR REGISTRO</button>
-                            <table class="table table-bordered">
-                                <thead>
+                        <div class="table-responsive">
+                            <div class="d-flex justify-content-start mb-3">
+                                <button type="button" class="btn-registro">AÑADIR REGISTRO</button>
+                            </div>
+                            <table class="table table-hover table-bordered align-middle">
+                                <thead class="table-light">
                                     <tr>
-                                        <th>Orden</th>
-                                        <th>Formación Profesional</th>
-                                        <th>País</th>
-                                        <th>Universidad</th>
-                                        <th>Especialidad</th>
-                                        <th>Fecha Inicio</th>
-                                        <th>Fecha Final</th>
-                                        <th>Grado Obtenido</th>
-                                        <th>Documento Sustentatorio</th>
-                                        <th>Observación</th>
-                                        <th>Opciones</th>    
+                                        <th class="text-center" style="width: 5%">Orden</th>
+                                        <th style="width: 12%">Formación Profesional</th>
+                                        <th style="width: 8%">País</th>
+                                        <th style="width: 15%">Universidad</th>
+                                        <th style="width: 20%">Especialidad</th>
+                                        <th style="width: 8%">Fecha Inicio</th>
+                                        <th style="width: 8%">Fecha Final</th>
+                                        <th style="width: 8%">Grado Obtenido</th>
+                                        <th style="width: 8%">Documento Sustentatorio</th>
+                                        <th style="width: 8%">Observación</th>
+                                        <th class="text-center" style="width: 100px">Opciones</th>
                                     </tr>
                                 </thead>
-                                <tbody id="addressTableBody">
+                                <tbody>
                                     <tr>
-                                        <td>1</td>
+                                        <td class="text-center">1</td>
                                         <td>Título Profesional</td>
                                         <td>Perú</td>
                                         <td>UNIVERSIDAD NACIONAL DE INGENIERIA</td>
@@ -761,55 +793,21 @@
                                         <td>Titulado</td>
                                         <td></td>
                                         <td></td>
-                                        <td><button type="button" class="btn btn-success btn-sm me-2">
-                                            <i class="fa-solid fa-pen"></i>
-                                        </button></td>
-                                        <td><button type="button" class="btn btn-success btn-sm me-2">
-                                            <i class="fa-solid fa-x"></i></i>
-                                        </button></td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Maestría</td>
-                                        <td>Perú</td>
-                                        <td>PONTIFICIA UNIVERSIDAD CATOLICA DEL PERÚ</td>
-                                        <td>Estudios completos de maestría en Ingeniería</td>
-                                        <td>04/04/02</td>
-                                        <td>12/12/06</td>
-                                        <td>Magister</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td><button type="button" class="btn btn-success btn-sm me-2">
-                                            <i class="fa-solid fa-pen"></i>
-                                        </button></td>
-                                        <td><button type="button" class="btn btn-success btn-sm me-2">
-                                            <i class="fa-solid fa-x"></i></i>
-                                        </button></td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Maestría</td>
-                                        <td>Perú</td>
-                                        <td>UNIVERSIDAD ANTONIO RUIZ DE MONTOYA</td>
-                                        <td>Maestría en educación con mención en docencia</td>
-                                        <td>03/03/17</td>
-                                        <td>12/12/19</td>
-                                        <td>Magister</td>
-                                        <td></td>
-                                        <td></td>
                                         <td>
-                                            <div class="row">
-                                                <button type="button" class="btn btn-success btn-sm me-2">
+                                            <div class="d-flex gap-2 justify-content-center">
+                                                <button type="button" class="btn btn-primary btn-sm">
                                                     <i class="fa-solid fa-pen"></i>
                                                 </button>
-                                                <button type="button" class="btn btn-success btn-sm me-2">
-                                                    <i class="fa-solid fa-x"></i></i>
-                                                </button> 
+                                                <button type="button" class="btn btn-danger btn-sm">
+                                                    <i class="fa-solid fa-x"></i>
+                                                </button>
                                             </div>
                                         </td>
                                     </tr>
+                                    <!-- Repite el mismo patrón para las otras filas -->
                                 </tbody>
                             </table>
+                        </div>
                     </div>
                     <div class="tab-pane fade" id="fourth" role="tabpanel" aria-labelledby="fourth-tab">
                         <!-- Contenido del cuarto tab -->
