@@ -822,46 +822,119 @@
     <script src="javaScript/sidebar_script.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
+            // Elementos del DOM
             const addAddressBtn = document.getElementById('addAddressBtn');
-            const addAddressModal = new bootstrap.Modal(document.getElementById('addAddressModal'));
+            const addAddressModalElement = document.getElementById('addAddressModal');
             const saveAddressBtn = document.getElementById('saveAddressBtn');
             const addressTableBody = document.getElementById('addressTableBody');
             const addAddressForm = document.getElementById('addAddressForm');
 
-            let addressOrder = 2; // Start from 2 since we already have one address
+            // Inicialización del modal
+            let addAddressModal;
+            if (addAddressModalElement) {
+                addAddressModal = new bootstrap.Modal(addAddressModalElement);
+            } else {
+                console.error('Modal element not found');
+            }
 
-            addAddressBtn.addEventListener('click', function () {
-                addAddressModal.show();
+            let addressOrder = 2; // Comenzamos desde 2 ya que hay un registro existente
+
+            // Evento para abrir el modal
+            if (addAddressBtn) {
+                addAddressBtn.addEventListener('click', function () {
+                    if (addAddressModal) {
+                        addAddressForm.reset(); // Limpiamos el formulario antes de abrirlo
+                        addAddressModal.show();
+                    } else {
+                        console.error('Modal not initialized');
+                    }
+                });
+            } else {
+                console.error('Add address button not found');
+            }
+
+            // Evento para guardar la dirección
+            if (saveAddressBtn) {
+                saveAddressBtn.addEventListener('click', function () {
+                    if (addAddressForm.checkValidity()) {
+                        const newAddress = {
+                            orden: addressOrder++,
+                            pais: document.getElementById('pais').value,
+                            extranjero: document.getElementById('extranjero').value,
+                            departamento: document.getElementById('departamento').value,
+                            provincia: document.getElementById('provincia').value,
+                            distrito: document.getElementById('distrito').value,
+                            tipoVia: document.getElementById('tipoVia').value,
+                            nombreVia: document.getElementById('nombreVia').value,
+                            tipo: document.getElementById('tipo').value,
+                            numeroInmueble: document.getElementById('numeroInmueble').value,
+                            tipoZona: document.getElementById('tipoZona').value,
+                            nombreZona: document.getElementById('nombreZona').value
+                        };
+
+                        const newRow = addressTableBody.insertRow();
+                        
+                        // Insertamos las celdas con los datos
+                        Object.values(newAddress).forEach(value => {
+                            const cell = newRow.insertCell();
+                            cell.textContent = value;
+                        });
+
+                        // Agregamos la celda de opciones con los botones
+                        const optionsCell = newRow.insertCell();
+                        optionsCell.innerHTML = `
+                            <div class="d-flex gap-2 justify-content-center">
+                                <button type="button" class="btn btn-primary btn-sm">
+                                    <i class="fa-solid fa-pen"></i>
+                                </button>
+                                <button type="button" class="btn btn-danger btn-sm">
+                                    <i class="fa-solid fa-x"></i>
+                                </button>
+                            </div>
+                        `;
+
+                        // Agregamos los event listeners para los nuevos botones
+                        const editBtn = optionsCell.querySelector('.btn-primary');
+                        const deleteBtn = optionsCell.querySelector('.btn-danger');
+
+                        editBtn.addEventListener('click', function() {
+                            console.log('Editar fila:', newAddress.orden);
+                        });
+
+                        deleteBtn.addEventListener('click', function() {
+                            if (confirm('¿Está seguro de eliminar este registro?')) {
+                                newRow.remove();
+                            }
+                        });
+
+                        // Cerramos el modal y limpiamos el formulario
+                        if (addAddressModal) {
+                            addAddressModal.hide();
+                        }
+                        addAddressForm.reset();
+                    } else {
+                        addAddressForm.reportValidity();
+                    }
+                });
+            } else {
+                console.error('Save address button not found');
+            }
+
+            // Agregamos event listeners a los botones existentes
+            document.querySelectorAll('#addressTableBody .btn-primary').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const row = this.closest('tr');
+                    console.log('Editar fila:', row.cells[0].textContent);
+                });
             });
 
-            saveAddressBtn.addEventListener('click', function () {
-                if (addAddressForm.checkValidity()) {
-                    const newAddress = {
-                        orden: addressOrder++,
-                        pais: document.getElementById('pais').value,
-                        extranjero: document.getElementById('extranjero').value,
-                        departamento: document.getElementById('departamento').value,
-                        provincia: document.getElementById('provincia').value,
-                        distrito: document.getElementById('distrito').value,
-                        tipoVia: document.getElementById('tipoVia').value,
-                        nombreVia: document.getElementById('nombreVia').value,
-                        tipo: document.getElementById('tipo').value,
-                        numeroInmueble: document.getElementById('numeroInmueble').value,
-                        tipoZona: document.getElementById('tipoZona').value,
-                        nombreZona: document.getElementById('nombreZona').value
-                    };
-
-                    const newRow = addressTableBody.insertRow();
-                    Object.values(newAddress).forEach(value => {
-                        const cell = newRow.insertCell();
-                        cell.textContent = value;
-                    });
-
-                    addAddressModal.hide();
-                    addAddressForm.reset();
-                } else {
-                    addAddressForm.reportValidity();
-                }
+            document.querySelectorAll('#addressTableBody .btn-danger').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const row = this.closest('tr');
+                    if (confirm('¿Está seguro de eliminar este registro?')) {
+                        row.remove();
+                    }
+                });
             });
         });
     </script>
